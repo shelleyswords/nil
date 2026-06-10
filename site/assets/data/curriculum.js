@@ -21,10 +21,10 @@ window.NIL_CURRICULUM = {
         { id:"L01", title:"Treat it like a tool, not a trophy", dur:"5 min", free:true, video:"/assets/videos/L01.mp4",
           recap:"Your NIL money is a tool that can build the rest of your life — not a trophy to show off. The athletes who stay wealthy think this way from day one.",
           action:"Decide before your next check lands: this money is a tool, not a trophy." },
-        { id:"L02", title:"The 30-day rule (beating lifestyle creep)", dur:"4 min", free:false, video:"",
+        { id:"L02", title:"The 30-day rule (beating lifestyle creep)", dur:"4 min", free:false, video:"/assets/videos/L02.mp4",
           recap:"New money makes everyone want to level up their lifestyle. The 30-day rule lets the hype cool so you don't trade real wealth for a quick flex.",
           action:"Make a personal rule: no big purchases for 30 days after any new deal." },
-        { id:"L03", title:"Why athletes go broke — and why you won't", dur:"5 min", free:false, video:"",
+        { id:"L03", title:"Why athletes go broke — and why you won't", dur:"5 min", free:false, video:"/assets/videos/L03.mp4",
           recap:"Broke athletes almost never earned too little — they made four avoidable mistakes. You're about to learn all four so you can dodge them.",
           action:"Write down the four mistakes and keep them somewhere you'll see them." }
       ]
