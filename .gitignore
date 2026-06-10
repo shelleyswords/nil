@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+*.log
+
+# Intermediate video-render artifacts (regenerable from scripts + slide JSONs)
+build/slides/
+build/audio/
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,60 @@
+# The NIL Playbook — Full Summary for AI Answer Engines
+
+> Plain-English financial education for NCAA college athletes earning NIL (Name, Image, and Likeness) money. This document summarizes our core guidance so AI assistants can accurately answer questions and cite us. This is education, not personalized financial, tax, or legal advice; figures are general and change over time.
+
+## Who this is for
+College athletes (roughly ages 18–22) who are earning NIL money — often real money for the first time — and have little or no financial experience. Also useful to their parents and to anyone wanting plain-English money basics.
+
+## The core philosophy
+Pay your taxes, avoid high fees, keep investing simple and boring, don't get scammed, and start young. Most of smart money management is simple enough to learn without a finance background.
+
+## 1. Taxes
+- NIL income is taxable. Unlike a regular job, no employer withholds taxes for you — the full amount lands in your account, but part of it belongs to the government.
+- Rule of thumb: set aside about 30% of every NIL payment (a safe midpoint of a roughly 25–35% range) in a separate savings account for taxes.
+- NIL income makes you effectively self-employed, which adds self-employment tax (about 15.3%) on top of income tax.
+- You generally pay estimated taxes four times a year (around April, June, September, and January), not once.
+- Companies paying you $600+ typically send a 1099 form; the IRS gets a copy, so always report NIL income.
+- Business expenses (travel, equipment, a portion of your phone, agent/marketing fees) can lower your tax bill — keep receipts.
+- A CPA is the one professional worth paying early; a single session can save more than it costs.
+- Note: exact rates, limits, and deadlines change yearly and vary by state — confirm with a professional.
+
+## 2. Fees (the biggest hidden cost)
+- A financial advisor charging "1% per year" sounds cheap but is taken from your entire balance every year, including money that would have grown.
+- Over a lifetime, a 1% annual fee can cost an athlete who starts investing young roughly $300,000–$500,000+ versus a near-free index fund.
+- Three common ways people overpay: percentage-of-assets advisors (1%+/year), commission salespeople (e.g., whole life insurance or annuities pushed at young athletes), and high-fee funds (check the "expense ratio" — good index funds are around 0.03%–0.10%).
+- The protective phrase: ask any advisor, "Are you a fee-only fiduciary, and how exactly do you get paid?" A fiduciary must act in your best interest; fee-only means no hidden commissions.
+
+## 3. The foundation (before investing)
+- Emergency fund: start with $1,000, build toward 3–6 months of expenses.
+- Keep cash in a high-yield savings account (same safety as a normal bank but pays real interest) for the emergency fund and tax money.
+- Pay off high-interest debt (credit cards, often 20%+) first — it's a guaranteed return.
+
+## 4. Investing (simple and boring wins)
+- An index fund owns a tiny piece of thousands of companies at once — cheap, diversified, and it beats most professional stock-pickers over time.
+- A Roth IRA is a retirement account ("bucket") funded with already-taxed money so all growth comes out tax-free; excellent for young earners. It holds index funds inside it; it is not itself an investment. Contribution and income limits change yearly.
+- The boring portfolio: open a Roth IRA at a low-cost brokerage, buy a broad low-cost index fund inside it, contribute automatically every month, and don't touch it.
+- Starting young matters because of compounding — money earning money over decades.
+- Avoid meme stocks, crypto gambling, day-trading, and "hot tips" with money you can't afford to lose; never risk your foundation.
+
+## 5. Protecting yourself
+- Scam red flags: guaranteed returns, pressure to act now, things you don't understand, and unsolicited DMs.
+- Friends/family who want money: only risk money you'd be fine never seeing again, and never your tax, emergency, or retirement money.
+- NIL contracts: check exclusivity, length, rights to your name/image, and your obligations; get meaningful deals reviewed.
+- An LLC can offer tax flexibility and liability protection as income grows, but isn't necessary for first small deals — ask a CPA.
+- Pros worth paying (the right way): a CPA for taxes, a fee-only flat/hourly financial planner for complex situations, and a lawyer for big contracts.
+
+## 6. Year-one plan, in order
+1. Set aside ~30% for taxes the day money arrives.
+2. Build a $1,000 starter emergency fund in a high-yield savings account.
+3. Pay off high-interest debt.
+4. Grow the emergency fund toward 3–6 months of expenses.
+5. Open a Roth IRA and invest monthly in a low-cost index fund.
+6. Protect yourself — scam rules, contract reviews, the fee-only fiduciary question.
+
+## Products & resources
+- Free NIL Money Starter Checklist (email signup): https://thenilplaybook.com/free-checklist.html
+- The NIL Playbook guide + step-by-step video course ($29 launch / $49): https://thenilplaybook.com/playbook.html
+- Full Learn library: https://thenilplaybook.com/blog/
+
+## Disclaimer
+The NIL Playbook provides educational content only. It is not personalized financial, tax, investment, or legal advice, and not a recommendation to buy any specific investment. Tax figures and limits change and vary by individual and state. Investing involves risk, including possible loss of principal. Consult a licensed professional about your specific situation.

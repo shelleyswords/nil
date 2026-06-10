@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The NIL Playbook — Keep More of Your NIL Money</title>
+<meta name="description" content="The plain-English money guide for college athletes. Learn how to keep, grow, and protect your NIL money — without paying huge advisor fees. Free starter checklist." />
+<style>
+  :root{
+    --ink:#0b1f33;
+    --ink-soft:#3a4d61;
+    --field:#0e7c5a;     /* field green */
+    --field-dark:#0a5e44;
+    --gold:#f2b705;      /* trophy gold */
+    --paper:#ffffff;
+    --mist:#f4f7f9;
+    --line:#e2e8ee;
+    --radius:16px;
+    --shadow:0 10px 30px rgba(11,31,51,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);line-height:1.6;background:var(--paper);-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+  a{color:inherit}
+  .btn{
+    display:inline-block;background:var(--gold);color:#1a1300;font-weight:800;
+    padding:16px 30px;border-radius:999px;text-decoration:none;font-size:1.05rem;
+    border:none;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease;
+    box-shadow:0 6px 18px rgba(242,183,5,.4);
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(242,183,5,.5)}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);box-shadow:none}
+  .btn-ghost:hover{border-color:#fff;box-shadow:none}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(11,31,51,.92);backdrop-filter:blur(8px)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 22px}
+  .logo{color:#fff;font-weight:900;font-size:1.15rem;letter-spacing:-.02em}
+  .logo span{color:var(--gold)}
+  nav a.nav-cta{color:var(--gold);font-weight:700;text-decoration:none;font-size:.95rem}
+
+  /* HERO */
+  header.hero{
+    background:linear-gradient(160deg,var(--ink) 0%,#10324f 55%,var(--field-dark) 130%);
+    color:#fff;padding:74px 0 86px;position:relative;overflow:hidden;
+  }
+  header.hero::after{
+    content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;
+    background:radial-gradient(circle,rgba(242,183,5,.22),transparent 70%);
+  }
+  .eyebrow{display:inline-block;background:rgba(242,183,5,.16);color:var(--gold);
+    font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
+    padding:7px 14px;border-radius:999px;margin-bottom:22px}
+  header.hero h1{font-size:clamp(2.1rem,5.2vw,3.6rem);font-weight:900;max-width:15ch}
+  header.hero p.sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:#cdd9e4;margin:20px 0 34px;max-width:46ch}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hero-note{color:#9fb2c4;font-size:.9rem;margin-top:16px}
+
+  /* STAT STRIP */
+  .stat-strip{background:var(--gold);color:#1a1300}
+  .stat-strip .wrap{display:flex;flex-wrap:wrap;gap:10px 40px;justify-content:center;padding:18px 22px;text-align:center}
+  .stat-strip b{font-weight:900}
+
+  /* SECTIONS */
+  section{padding:72px 0}
+  section.mist{background:var(--mist)}
+  .section-head{text-align:center;max-width:60ch;margin:0 auto 46px}
+  .section-head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:900}
+  .section-head p{color:var(--ink-soft);font-size:1.1rem;margin-top:14px}
+
+  /* PROBLEM CARDS */
+  .grid{display:grid;gap:20px}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-2{grid-template-columns:1.1fr .9fr;align-items:center;gap:46px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;box-shadow:var(--shadow)}
+  .card .ic{font-size:1.8rem;margin-bottom:12px;display:block}
+  .card h3{font-size:1.18rem;margin-bottom:8px}
+  .card p{color:var(--ink-soft);font-size:.98rem}
+
+  /* FEE CALLOUT */
+  .fee{background:var(--ink);color:#fff;border-radius:24px;padding:48px;text-align:center;box-shadow:var(--shadow)}
+  .fee .big{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:900;color:var(--gold);line-height:1}
+  .fee p{color:#cdd9e4;max-width:48ch;margin:16px auto 0;font-size:1.08rem}
+
+  /* WHAT'S INSIDE */
+  .chapters{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:880px;margin:0 auto}
+  .chap{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);
+    border-radius:14px;padding:18px 20px}
+  .chap .n{flex:none;width:34px;height:34px;border-radius:9px;background:var(--field);color:#fff;
+    font-weight:800;display:grid;place-items:center;font-size:.95rem}
+  .chap h4{font-size:1.02rem;margin-bottom:2px}
+  .chap p{color:var(--ink-soft);font-size:.9rem}
+
+  /* PRICING */
+  .price-card{max-width:520px;margin:0 auto;background:var(--paper);border:2px solid var(--field);
+    border-radius:24px;padding:42px 36px;text-align:center;box-shadow:var(--shadow);position:relative}
+  .ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--field);
+    color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:7px 16px;border-radius:999px}
+  .price-card .amt{font-size:3.4rem;font-weight:900;color:var(--ink);line-height:1}
+  .price-card .was{color:#9aa7b4;text-decoration:line-through;font-weight:700;font-size:1.3rem;margin-left:8px}
+  .price-card ul{list-style:none;text-align:left;margin:26px 0 30px}
+  .price-card li{padding:9px 0 9px 30px;position:relative;color:var(--ink-soft)}
+  .price-card li::before{content:"✓";position:absolute;left:0;color:var(--field);font-weight:900}
+
+  /* EMAIL CAPTURE */
+  .capture{background:linear-gradient(160deg,var(--field) 0%,var(--field-dark) 100%);color:#fff;
+    border-radius:24px;padding:52px 40px;text-align:center;box-shadow:var(--shadow)}
+  .capture h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:900;max-width:20ch;margin:0 auto}
+  .capture p{color:#d7f0e6;margin:14px auto 28px;max-width:44ch}
+  form.optin{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+  form.optin input{flex:1;min-width:220px;padding:15px 18px;border-radius:999px;border:none;
+    font-size:1rem;outline:none}
+  .form-note{color:#bfe6d6;font-size:.84rem;margin-top:14px}
+  .success{display:none;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);
+    border-radius:14px;padding:20px;max-width:480px;margin:0 auto;font-weight:600}
+
+  /* FAQ */
+  details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:0 22px;margin-bottom:12px}
+  details summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:700;font-size:1.05rem;
+    display:flex;justify-content:space-between;align-items:center}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";color:var(--field);font-size:1.5rem;font-weight:800}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--ink-soft);padding:0 0 22px}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:#9fb2c4;padding:48px 0;text-align:center;font-size:.9rem}
+  footer .logo{display:block;margin-bottom:14px}
+  .disclaimer{max-width:70ch;margin:18px auto 0;font-size:.82rem;color:#6f8295;line-height:1.5}
+
+  @media(max-width:820px){
+    .grid-3{grid-template-columns:1fr}
+    .grid-2{grid-template-columns:1fr;gap:28px}
+    .chapters{grid-template-columns:1fr}
+    .fee{padding:34px 22px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">The NIL <span>Playbook</span></div>
+    <a href="#free" class="nav-cta">Get the free checklist →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">For college athletes earning NIL money</span>
+    <h1>Keep more of the money you earned.</h1>
+    <p class="sub">The plain-English playbook that teaches you how to grow and protect your NIL money — without handing a fortune to a financial advisor who didn't earn it.</p>
+    <div class="hero-cta">
+      <a href="#free" class="btn">Get the free checklist</a>
+      <a href="#playbook" class="btn btn-ghost">See the full guide</a>
+    </div>
+    <p class="hero-note">No jargon. No suits. No fees you didn't agree to.</p>
+  </div>
+</header>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="wrap">
+    <span><b>500,000+</b> NCAA athletes can earn NIL money</span>
+    <span><b>Most</b> are getting real money for the first time</span>
+    <span><b>A 1% fee</b> can cost you $400k+ over a lifetime</span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Getting the money is the easy part. Keeping it is where athletes get burned.</h2>
+      <p>Nobody taught you taxes, fees, or investing in the locker room. So the suits show up — and quietly take a cut of everything.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="ic">🧾</span>
+        <h3>The tax trap</h3>
+        <p>Nobody withholds taxes on NIL money. Spend the whole check and tax season becomes a nightmare you can't pay for.</p>
+      </div>
+      <div class="card">
+        <span class="ic">💸</span>
+        <h3>The fee trap</h3>
+        <p>"Advisors" charging 1–2% a year sound cheap. Over your life that quietly drains hundreds of thousands of dollars.</p>
+      </div>
+      <div class="card">
+        <span class="ic">🎣</span>
+        <h3>The predators</h3>
+        <p>New money attracts DMs, "can't-miss" deals, and salespeople pushing products that pay them, not you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEE CALLOUT -->
+<section class="mist">
+  <div class="wrap">
+    <div class="fee">
+      <div class="big">$400,000+</div>
+      <p>That's roughly what a "small" 1% annual advisor fee can cost you by retirement if you start investing in your 20s. Same investments — the only difference is the fee. We'll show you how to skip it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section id="playbook">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What's inside The NIL Playbook</h2>
+      <p>Eight plain-English chapters. Every one ends with the exact steps to take. By the end you'll have a year-one money plan built for how much you actually earn.</p>
+    </div>
+    <div class="chapters">
+      <div class="chap"><div class="n">1</div><div><h4>Don't fumble the first check</h4><p>The mindset that keeps athletes from going broke.</p></div></div>
+      <div class="chap"><div class="n">2</div><div><h4>Taxes first</h4><p>The 30% rule, quarterly payments, and the tax surprise nobody warns you about.</p></div></div>
+      <div class="chap"><div class="n">3</div><div><h4>The fee trap</h4><p>How 1% destroys your wealth — and how to pay almost nothing instead.</p></div></div>
+      <div class="chap"><div class="n">4</div><div><h4>The simple foundation</h4><p>Emergency fund, the right savings account, killing debt.</p></div></div>
+      <div class="chap"><div class="n">5</div><div><h4>Investing without getting ripped off</h4><p>Index funds and Roth IRAs, explained like you're a normal human.</p></div></div>
+      <div class="chap"><div class="n">6</div><div><h4>Protecting yourself</h4><p>Scams, "friends with deals," contracts, and when you actually need a pro.</p></div></div>
+      <div class="chap"><div class="n">7</div><div><h4>Your year-one plan</h4><p>A step-by-step checklist tailored to your income level.</p></div></div>
+      <div class="chap"><div class="n">8</div><div><h4>Resources & quick reference</h4><p>The magic questions, gut-checks, and a plain-English glossary.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="mist">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>One payment. Yours forever.</h2>
+      <p>No subscription to manage your money. No percentage of your future. Just the whole playbook, once.</p>
+    </div>
+    <div class="price-card">
+      <div class="ribbon">Launch price</div>
+      <div><span class="amt">$29</span><span class="was">$49</span></div>
+      <ul>
+        <li>The complete 8-chapter NIL Playbook (PDF)</li>
+        <li>Step-by-step action items in every chapter</li>
+        <li>Year-one money plan by income level</li>
+        <li>The "magic questions" to vet any advisor</li>
+        <li>Plain-English glossary — zero jargon</li>
+        <li>Lifetime access + future updates</li>
+      </ul>
+      <a href="#" class="btn" style="width:100%">Get the Playbook — $29</a>
+      <p style="color:var(--ink-soft);font-size:.85rem;margin-top:14px">Not ready? Start with the free checklist below. 👇</p>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section id="free">
+  <div class="wrap">
+    <div class="capture">
+      <h2>Free: The NIL Money Starter Checklist</h2>
+      <p>The 7 moves to make before you spend a dollar of NIL money. One page. Free. Sent straight to your inbox.</p>
+      <form class="optin" id="optinForm" onsubmit="return handleOptin(event)">
+        <input type="email" id="email" placeholder="Your email address" required aria-label="Email address" />
+        <button type="submit" class="btn">Send me the checklist</button>
+      </form>
+      <p class="form-note">No spam. Unsubscribe anytime. We'll also send occasional money tips.</p>
+      <div class="success" id="successMsg">✅ You're in! Check your inbox for the checklist. (Connect this form to your email tool to deliver it automatically.)</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="mist">
+  <div class="wrap" style="max-width:760px">
+    <div class="section-head">
+      <h2>Questions</h2>
+    </div>
+    <details><summary>Is this financial advice?</summary><p>No — and that's on purpose. This is financial <b>education</b>. It explains how money, taxes, fees, and investing work so you can make smart decisions and ask the right questions. For advice about your exact situation, talk to a licensed professional — the guide even shows you how to find a good one who won't overcharge you.</p></details>
+    <details><summary>I don't know anything about money. Is this too advanced?</summary><p>It's built for exactly you. No jargon, no assumptions. If a term comes up, we explain it in plain English. If you can read a playbook, you can read this.</p></details>
+    <details><summary>I'm only making a few thousand dollars. Is it still worth it?</summary><p>Yes — the habits matter most when you start small. The guide has a section built specifically for athletes earning $1k–$10k. Starting young is the single biggest advantage you have.</p></details>
+    <details><summary>Do I need to buy anything to get value?</summary><p>No. The starter checklist is completely free and genuinely useful. The full Playbook is there if you want the complete step-by-step system.</p></details>
+    <details><summary>Why so cheap? What's the catch?</summary><p>No catch. The whole point is that athletes already get overcharged for money help. A one-time $29 guide is the opposite of a 1%-forever advisor.</p></details>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="logo">The NIL <span style="color:var(--gold)">Playbook</span></div>
+    <div>For the people who earned it.</div>
+    <p class="disclaimer">
+      The NIL Playbook provides educational content only. It is <b>not</b> personalized financial, tax, investment, or legal advice, and nothing here is a recommendation to buy any specific investment or product. Consult a licensed professional about your specific situation. Investing involves risk, including possible loss of principal.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Placeholder opt-in handler. Replace with your email provider's embed
+  // (Mailchimp, ConvertKit, Beehiiv, etc.) or a form endpoint (Formspree).
+  function handleOptin(e){
+    e.preventDefault();
+    var email = document.getElementById('email').value;
+    // TODO: POST `email` to your email service / list provider here.
+    document.getElementById('optinForm').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+    console.log('Captured email (wire this up to your provider):', email);
+    return false;
+  }
+</script>
+
+</body>
+</html>

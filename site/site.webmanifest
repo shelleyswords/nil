@@ -1,0 +1,13 @@
+{
+  "name": "The NIL Playbook",
+  "short_name": "NIL Playbook",
+  "description": "Plain-English money help for college athletes earning NIL money.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1f33",
+  "theme_color": "#0b1f33",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

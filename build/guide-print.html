@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>The NIL Playbook</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.85in 0.8in 0.95in 0.8in;
+    @bottom-center {
+      content: counter(page);
+    }
+  }
+  @page :first { margin: 0; }
+  @page cover { margin: 0; }
+
+  :root{
+    --ink:#0b1f33;
+    --ink-soft:#41566b;
+    --field:#0e7c5a;
+    --field-dark:#0a5e44;
+    --gold:#f2b705;
+    --gold-soft:#fdf3d3;
+    --mist:#f4f7f9;
+    --line:#dde6ee;
+    --red:#c0392b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Georgia","Times New Roman",serif;
+    color:var(--ink);
+    font-size:11.2pt;
+    line-height:1.62;
+  }
+  h1,h2,h3,h4,.sans{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing:-.01em;
+  }
+
+  /* ---------- COVER ---------- */
+  .cover{
+    page: cover;
+    height:100vh;
+    min-height:100vh;
+    background:linear-gradient(160deg,#0b1f33 0%,#10324f 52%,#0a5e44 125%);
+    color:#fff;
+    padding:1.5in 0.9in 1in;
+    position:relative;
+    page-break-after:always;
+    display:flex;flex-direction:column;
+  }
+  .cover::after{
+    content:"";position:absolute;right:-1.4in;top:-1.4in;width:5in;height:5in;
+    background:radial-gradient(circle,rgba(242,183,5,.20),transparent 70%);
+  }
+  .cover .eyebrow{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    text-transform:uppercase;letter-spacing:.16em;font-size:11pt;font-weight:700;
+    color:var(--gold);margin-bottom:.5in;
+  }
+  .cover h1{
+    font-size:62pt;font-weight:900;line-height:.98;margin-top:auto;
+  }
+  .cover h1 .green{color:var(--gold)}
+  .cover .tag{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:16pt;font-weight:400;color:#cdd9e4;margin-top:.32in;max-width:8in;line-height:1.4;
+  }
+  .cover .rule{height:4px;width:1.6in;background:var(--gold);margin:.5in 0 .35in;border-radius:2px}
+  .cover .foot{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:11pt;color:#9fb2c4;margin-top:auto;letter-spacing:.02em;
+  }
+  .cover .foot strong{color:#fff;font-weight:800}
+
+  /* ---------- GENERIC ---------- */
+  .page-break{page-break-before:always}
+  /* keep callout boxes, tables, and list rows from splitting across pages */
+  .analogy,.example,.warn,.do-now,.pull,.one-liner,.disclaimer-band,
+  table,.toc-item,.item,dl.gloss div{page-break-inside:avoid}
+  .ch-head{page-break-after:avoid}
+  h3.sub,h4.minor{page-break-after:avoid}
+  p{margin:0 0 11pt}
+  .lead{font-size:13pt;color:var(--ink-soft);font-style:italic;margin-bottom:16pt}
+
+  /* disclaimer band */
+  .disclaimer-band{
+    background:var(--mist);border:1px solid var(--line);border-left:5px solid var(--gold);
+    border-radius:8px;padding:16pt 18pt;font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:9.6pt;line-height:1.55;color:var(--ink-soft);margin:14pt 0;
+  }
+  .disclaimer-band strong{color:var(--ink)}
+
+  /* intro page */
+  .intro h2{font-size:21pt;font-weight:900;margin:6pt 0 14pt;color:var(--ink)}
+  .one-liner{
+    background:var(--field);color:#fff;border-radius:12px;padding:18pt 22pt;
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:13pt;font-weight:600;
+    text-align:center;line-height:1.4;margin:16pt 0;
+  }
+  .one-liner span{color:var(--gold)}
+
+  /* TOC */
+  .toc{font-family:"Helvetica Neue",Arial,sans-serif}
+  .toc h2{font-size:21pt;font-weight:900;margin-bottom:18pt}
+  .toc-item{display:flex;align-items:baseline;gap:12pt;padding:9pt 0;border-bottom:1px solid var(--line)}
+  .toc-num{flex:none;width:30px;height:30px;border-radius:8px;background:var(--ink);color:#fff;
+    font-weight:800;font-size:11pt;display:flex;align-items:center;justify-content:center}
+  .toc-title{font-weight:700;font-size:12pt}
+  .toc-desc{color:var(--ink-soft);font-size:10pt;font-weight:400}
+
+  /* ---------- CHAPTER ---------- */
+  .chapter{page-break-before:always}
+  .ch-head{margin-bottom:18pt;padding-bottom:14pt;border-bottom:3px solid var(--gold)}
+  .ch-kicker{
+    font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;
+    font-size:9.5pt;font-weight:800;color:var(--field);
+  }
+  .ch-num{
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:46pt;font-weight:900;color:var(--gold);
+    line-height:1;float:right;margin-top:-6pt;
+  }
+  .ch-title{font-family:"Helvetica Neue",Arial,sans-serif;font-size:25pt;font-weight:900;margin-top:4pt;max-width:8in}
+
+  h3.sub{font-size:14pt;font-weight:800;color:var(--ink);margin:18pt 0 8pt}
+  h4.minor{font-size:11.5pt;font-weight:800;color:var(--field-dark);margin:13pt 0 5pt;
+    font-family:"Helvetica Neue",Arial,sans-serif}
+
+  ul,ol{margin:0 0 11pt 0;padding-left:20pt}
+  li{margin-bottom:6pt}
+  strong{color:var(--ink)}
+
+  /* analogy / picture-this box */
+  .analogy{
+    background:var(--gold-soft);border-radius:10px;padding:14pt 16pt;margin:14pt 0;
+    border:1px solid #f0dd9b;
+  }
+  .analogy .label{
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.8pt;font-weight:800;
+    text-transform:uppercase;letter-spacing:.1em;color:#9a7d06;display:block;margin-bottom:5pt;
+  }
+  .analogy p:last-child{margin-bottom:0}
+
+  /* picture this (example) */
+  .example{
+    background:#eef6f2;border:1px solid #cfe6dc;border-radius:10px;padding:14pt 16pt;margin:14pt 0;
+  }
+  .example .label{
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.8pt;font-weight:800;
+    text-transform:uppercase;letter-spacing:.1em;color:var(--field-dark);display:block;margin-bottom:5pt;
+  }
+  .example p:last-child{margin-bottom:0}
+
+  /* do this now box */
+  .do-now{
+    background:var(--ink);color:#fff;border-radius:12px;padding:18pt 20pt;margin:18pt 0 6pt;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+  }
+  .do-now .label{font-size:10.5pt;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--gold);display:block;margin-bottom:10pt}
+  .do-now ul{padding-left:0;list-style:none;margin:0}
+  .do-now li{padding-left:24pt;position:relative;margin-bottom:9pt;font-size:10.6pt;line-height:1.5;color:#e8eef4}
+  .do-now li::before{content:"";position:absolute;left:0;top:1pt;width:15px;height:15px;
+    border:2px solid var(--gold);border-radius:4px}
+  .do-now strong{color:#fff}
+
+  /* warning / red flag */
+  .warn{
+    background:#fdeeec;border:1px solid #f2c4bd;border-left:5px solid var(--red);
+    border-radius:8px;padding:13pt 16pt;margin:13pt 0;
+  }
+  .warn .label{font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.8pt;font-weight:800;
+    text-transform:uppercase;letter-spacing:.1em;color:var(--red);display:block;margin-bottom:5pt}
+  .warn p:last-child{margin-bottom:0}
+
+  /* key phrase pull */
+  .pull{
+    border-left:5px solid var(--field);padding:4pt 0 4pt 16pt;margin:14pt 0;
+    font-size:13pt;font-style:italic;color:var(--ink);line-height:1.45;
+  }
+
+  /* comparison table */
+  table{width:100%;border-collapse:collapse;margin:14pt 0;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt}
+  th{background:var(--ink);color:#fff;text-align:left;padding:9pt 12pt;font-weight:700}
+  td{padding:9pt 12pt;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-soft)}
+  tr:nth-child(even) td{background:var(--mist)}
+  .yes{color:var(--field-dark);font-weight:700}
+  .no{color:var(--red);font-weight:700}
+
+  /* glossary */
+  .gloss dt{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:800;color:var(--field-dark);
+    margin-top:12pt;font-size:11pt}
+  .gloss dd{margin:2pt 0 0;color:var(--ink-soft)}
+
+  .back{page-break-before:always;text-align:center;padding-top:2in}
+  .back h2{font-size:24pt;font-weight:900;font-family:"Helvetica Neue",Arial,sans-serif}
+  .back .rule{height:4px;width:1.4in;background:var(--gold);margin:.3in auto;border-radius:2px}
+  .back p{color:var(--ink-soft);max-width:6in;margin:0 auto 11pt}
+</style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="eyebrow">The Money Guide for College Athletes</div>
+  <h1>The NIL<br><span class="green">Playbook</span></h1>
+  <div class="rule"></div>
+  <div class="tag">How to keep, grow, and protect your NIL money — without getting ripped off by fees you never agreed to.</div>
+  <div class="foot"><strong>No jargon. No suits. No fees you didn't sign up for.</strong></div>
+</div>
+
+<!-- ===================== INTRO ===================== -->
+<div class="intro">
+  <h2>Start here</h2>
+  <p class="lead">You earned this money. This guide is about keeping it.</p>
+
+  <p>Getting NIL money is exciting — and a little overwhelming. Suddenly there are taxes, "advisors," people in your DMs, and a hundred decisions nobody ever taught you how to make. This guide fixes that. It explains everything in plain English, like a teammate would, with zero assumptions about what you already know.</p>
+
+  <p>If a word might be unfamiliar, we explain it the moment it shows up. If a number matters, we show you a real example with real dollars so you can picture it. You do <strong>not</strong> need any money experience to understand this.</p>
+
+  <div class="one-liner">The whole guide in one sentence:<br><span>Pay your taxes, dodge the fees, keep it simple, don't get scammed — and let boring investments do the work.</span></div>
+
+  <h4 class="minor">How to read it</h4>
+  <p>You don't have to read it all at once. Every chapter ends with a <strong>"Do This Now"</strong> box — the actual steps to take. If you only ever do those boxes, you'll already be ahead of almost every athlete out there. Chapter 7 ties every step together into one plan, sorted by how much you earn.</p>
+
+  <div class="disclaimer-band">
+    <strong>One important note.</strong> This guide is <strong>education, not personalized advice.</strong> It teaches you how money, taxes, fees, and investing work so you can make smart choices and ask the right questions. It is not a recommendation to buy any specific investment, and it isn't a substitute for a licensed tax or financial professional who knows your exact situation (Chapter 6 shows you how to find a good one who won't overcharge you). Investing always carries risk, including the possible loss of money you put in.
+  </div>
+</div>
+
+<!-- ===================== TOC ===================== -->
+<div class="toc page-break">
+  <h2>What's inside</h2>
+  <div class="toc-item"><div class="toc-num">1</div><div><div class="toc-title">Don't Fumble the First Check</div><div class="toc-desc">The mindset that keeps athletes from going broke.</div></div></div>
+  <div class="toc-item"><div class="toc-num">2</div><div><div class="toc-title">Taxes First</div><div class="toc-desc">The part nobody warns you about — and the simple rule that saves you.</div></div></div>
+  <div class="toc-item"><div class="toc-num">3</div><div><div class="toc-title">The Fee Trap</div><div class="toc-desc">How a "tiny" 1% fee quietly steals a fortune — and how to skip it.</div></div></div>
+  <div class="toc-item"><div class="toc-num">4</div><div><div class="toc-title">The Simple Foundation</div><div class="toc-desc">The boring money moves to make before you invest a dollar.</div></div></div>
+  <div class="toc-item"><div class="toc-num">5</div><div><div class="toc-title">Investing Without Getting Ripped Off</div><div class="toc-desc">Index funds and Roth IRAs, explained like you're a normal human.</div></div></div>
+  <div class="toc-item"><div class="toc-num">6</div><div><div class="toc-title">Protecting Yourself</div><div class="toc-desc">Scams, "friends with deals," contracts, and when you really need a pro.</div></div></div>
+  <div class="toc-item"><div class="toc-num">7</div><div><div class="toc-title">Your Year-One Plan</div><div class="toc-desc">Every step, in order, tailored to how much you earn.</div></div></div>
+  <div class="toc-item"><div class="toc-num">8</div><div><div class="toc-title">Quick Reference & Glossary</div><div class="toc-desc">The magic questions, gut-checks, and every term in plain English.</div></div></div>
+</div>
+
+<!-- ===================== CH 1 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">1</div>
+    <div class="ch-kicker">Chapter One</div>
+    <div class="ch-title">Don't Fumble the First Check</div>
+  </div>
+
+  <p class="lead">The first check feels like a prize. The athletes who stay wealthy treat it like a tool.</p>
+
+  <p>Getting your first NIL check feels like winning a game. The danger is treating it like a trophy instead of a tool. A trophy sits on a shelf and looks good. A tool builds something. This money can build the rest of your life — but only if you treat it the right way from day one.</p>
+
+  <p>Three truths nobody tells you:</p>
+  <ul>
+    <li><strong>NIL money is not "extra" money.</strong> It's income, exactly like a paycheck — and the government treats it that way (that's Chapter 2).</li>
+    <li><strong>It probably won't last forever.</strong> Most NIL deals are short. The money you make this year may need to stretch across years.</li>
+    <li><strong>The goal isn't to look rich. It's to actually be rich later.</strong> Looking rich is loud — the car, the chains, the bottle service. Being rich is quiet — it's the money working for you where nobody can see it.</li>
+  </ul>
+
+  <div class="analogy">
+    <span class="label">Picture it like this</span>
+    <p>Think of your NIL money like water during a long season. You can chug the whole bottle the second you're thirsty and have nothing left for the fourth quarter — or you can sip it smart and finish strong. Same bottle. Totally different outcome.</p>
+  </div>
+
+  <h3 class="sub">Why pro athletes go broke</h3>
+  <p>You've heard it: tons of pro athletes end up broke a few years after they stop playing. It's almost never because they didn't earn enough. It's four mistakes, every time:</p>
+  <ol>
+    <li>They spent like the money would never stop coming.</li>
+    <li>They trusted the wrong people with it.</li>
+    <li>They paid huge fees for years and never noticed.</li>
+    <li>Nobody ever taught them the basics.</li>
+  </ol>
+  <p>This guide is the cure for all four. You're reading it — which means mistake #4 is already off the table.</p>
+
+  <h3 class="sub">The three mistakes that do the most damage</h3>
+  <h4 class="minor">1. Spending it before taxing it</h4>
+  <p>That $20,000 deal is not $20,000 of spending money. Roughly a quarter to a third of it belongs to the government. Spend the whole thing and you'll owe money you no longer have. (Chapter 2 makes this painless.)</p>
+  <h4 class="minor">2. Handing it to the wrong "advisor"</h4>
+  <p>The person who offers to "manage" your money might quietly charge you a fee every year that costs you a fortune over time. Chapter 3 shows you exactly how this works and how to avoid it.</p>
+  <h4 class="minor">3. Lifestyle creep</h4>
+  <p>"Lifestyle creep" is when every new dollar you earn gets spent leveling up how you live — a nicer car, then nicer clothes, then a nicer everything. The problem: a car loses value the moment you drive it off the lot. Money you invest <em>grows</em>. Every dollar spent looking rich is a dollar that can't make you rich.</p>
+
+  <div class="pull">You don't have to be cheap. You just have to wait — and tell the difference between a want and a flex.</div>
+
+  <div class="do-now">
+    <span class="label">✓ Do This Now</span>
+    <ul>
+      <li>Decide <strong>before</strong> the money lands: "This is a tool, not a trophy."</li>
+      <li>Make one rule: <strong>no big purchases for 30 days</strong> after any new deal. Let the excitement cool off. If you still want it in a month, fine — usually you won't.</li>
+      <li>Read Chapter 2 <strong>before</strong> you spend a dollar of NIL money.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CH 2 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">2</div>
+    <div class="ch-kicker">Chapter Two</div>
+    <div class="ch-title">Taxes First</div>
+  </div>
+
+  <p class="lead">This is the chapter that saves you from a disaster. Read it twice.</p>
+
+  <p>Here's the trap: when you have a normal job, your employer quietly takes taxes out of every paycheck before you ever see the money. With NIL money, <strong>nobody does that for you.</strong> The full amount lands in your account looking like it's all yours — but a chunk of it secretly belongs to the government, and the bill comes later. If you've already spent it, that bill becomes a nightmare.</p>
+
+  <div class="analogy">
+    <span class="label">Picture it like this</span>
+    <p>Imagine a friend hands you $1,000 to hold, but $300 of it actually belongs to someone else who'll come collect next year. If you spend all $1,000, you're now $300 in the hole to someone you can't avoid. That "someone" is the IRS. The fix is simple: set their share aside the moment the money arrives.</p>
+  </div>
+
+  <h3 class="sub">What you actually owe</h3>
+  <p>When you earn NIL money, the government basically treats you like you run your own little business (they call it being "self-employed"). That means you may owe a few different taxes:</p>
+  <ul>
+    <li><strong>Federal income tax</strong> — the main tax everyone knows. The rate depends on your total income for the year.</li>
+    <li><strong>State income tax</strong> — depends on where you live. Some states charge none; others take a noticeable cut.</li>
+    <li><strong>Self-employment tax (about 15%)</strong> — this is the surprise that catches everyone. It covers Social Security and Medicare. At a normal job your employer pays half of this for you. When you're self-employed, you cover the whole thing yourself.</li>
+  </ul>
+
+  <div class="example">
+    <span class="label">Picture this: a $10,000 deal</span>
+    <p>You sign a $10,000 NIL deal. It feels like $10,000. But between federal, state, and self-employment tax, you might owe somewhere around $2,500–$3,500 of it when tax time comes. If you set aside $3,000 the day it landed, you're totally fine. If you spent all $10,000, you now owe thousands you don't have. Same deal — the only difference is one simple habit.</p>
+  </div>
+
+  <div class="pull">The rule that saves you: the moment any NIL money lands, move <strong>30%</strong> into a separate savings account and pretend it doesn't exist.</div>
+
+  <h3 class="sub">"Quarterly taxes" — paying 4 times a year</h3>
+  <p>Because no employer is taking taxes out for you, the government doesn't want to wait until April to get paid. They expect you to send in estimated tax payments <strong>four times a year</strong> — roughly April, June, September, and January. These are called "quarterly estimated taxes." Skip them and you can get hit with small penalties on top of the tax. It sounds intimidating; it's really just four reminders in your calendar, and a tax pro (below) sets it up for you the first time.</p>
+
+  <h3 class="sub">Good news: expenses can lower your bill</h3>
+  <p>Because you count as self-employed, money you spend to <em>make</em> your NIL income can reduce the tax you owe. These are called "business expenses" or "write-offs." Things like:</p>
+  <ul>
+    <li>Travel to appearances or shoots</li>
+    <li>Equipment or gear you buy for content</li>
+    <li>A portion of your phone bill (you use it for deals)</li>
+    <li>Fees you pay an agent, editor, or marketer</li>
+  </ul>
+  <p>The catch: you have to <strong>keep the receipts.</strong> A free receipt app or even a single folder is enough. Every receipt you keep can be money back in your pocket.</p>
+
+  <h3 class="sub">The "1099" form</h3>
+  <p>Any company that pays you $600 or more will usually send you a tax form called a <strong>1099</strong> at the start of the next year. It simply reports how much they paid you. Important: the IRS gets a copy too. So the income is on record whether you report it or not — always report it. Hiding NIL income is not a risk worth taking.</p>
+
+  <div class="do-now">
+    <span class="label">✓ Do This Now</span>
+    <ul>
+      <li>Open a <strong>separate savings account just for taxes.</strong> The day any NIL money lands, move <strong>30%</strong> into it and don't touch it.</li>
+      <li>Start a <strong>receipts folder</strong> (a free app or one physical folder) for anything you buy related to your NIL work.</li>
+      <li>Put the four <strong>quarterly tax dates</strong> in your phone calendar today: April, June, September, January.</li>
+      <li>Before your first real tax season, spend about <strong>$200–$400 on one session with a CPA</strong> (a tax professional). This is the one pro worth paying early — they'll save you far more than they cost.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CH 3 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">3</div>
+    <div class="ch-kicker">Chapter Three</div>
+    <div class="ch-title">The Fee Trap</div>
+  </div>
+
+  <p class="lead">This chapter puts the most money back in your pocket. Fees are invisible — which is exactly why they're so dangerous.</p>
+
+  <p>A fee never sends you a bill. It doesn't ask permission. It just quietly skims a little off your money, over and over, year after year. Because you never <em>feel</em> it, most people never question it. That's how a "small" fee turns into a giant pile of money — yours — ending up in someone else's pocket.</p>
+
+  <h3 class="sub">Why a "tiny" 1% fee is actually enormous</h3>
+  <p>Lots of money managers charge "1% per year." One percent sounds like nothing. Here's why it's a monster:</p>
+  <ul>
+    <li>That 1% is taken from your <strong>entire pile of money, every single year</strong> — whether they made you a profit or not.</li>
+    <li>Worse, it's 1% of money that <em>would have kept growing.</em> Every dollar taken in fees is a dollar that can never grow into more dollars.</li>
+  </ul>
+
+  <div class="analogy">
+    <span class="label">Picture it like this</span>
+    <p>Imagine a tiny hole in your water bottle. One drop a second — you barely notice it. But leave that bottle out all day and it's empty. A 1% fee is that slow leak, except it runs for 40 years and the "water" is your retirement.</p>
+  </div>
+
+  <div class="example">
+    <span class="label">Picture this: the cost of 1%</span>
+    <p>Two athletes invest the same money the same way starting in their 20s. One pays a 1%-a-year advisor; the other uses a near-free index fund (Chapter 5). Decades later, the fee alone can eat <strong>$300,000 to $500,000+</strong> of the first athlete's money. Same investments. Same effort. The <em>only</em> difference is the fee. That's a house — gone, quietly, to fees.</p>
+  </div>
+
+  <h3 class="sub">The three ways people get overcharged</h3>
+  <h4 class="minor">1. Percentage-of-your-money advisors (1%+ per year)</h4>
+  <p>The most common trap. They take a slice of everything you have, every year, forever. This can make sense for someone with millions and a genuinely complicated situation. For a young athlete with a simple setup, it's wildly overpriced.</p>
+  <h4 class="minor">2. Commission salespeople</h4>
+  <p>Some "advisors" are really salespeople who get paid a commission to sell you specific products. The product that pays <em>them</em> the most is rarely the one that's best for <em>you.</em></p>
+  <div class="warn">
+    <span class="label">Red flag</span>
+    <p>Be very skeptical of anyone pushing <strong>"whole life insurance"</strong> or <strong>"annuities"</strong> on a healthy 20-year-old athlete. These products pay the salesperson a big commission and are almost never the right move for someone your age.</p>
+  </div>
+  <h4 class="minor">3. High-fee funds (the "expense ratio")</h4>
+  <p>Even with no advisor at all, an investment itself can have a fee baked in. It's called the <strong>"expense ratio"</strong> — the percentage a fund charges you each year just to own it. Some funds charge 1% or more. A good, simple index fund charges around <strong>0.03%–0.10%</strong> — basically nothing. Same idea, up to 30 times cheaper. Always check this number before buying any fund.</p>
+
+  <h3 class="sub">What good actually costs</h3>
+  <table>
+    <tr><th>Option</th><th>Roughly what it costs</th><th>Worth it?</th></tr>
+    <tr><td>Do-it-yourself index funds</td><td>~0.03–0.10% / year (almost free)</td><td class="yes">Yes — for most athletes</td></tr>
+    <tr><td>Flat-fee / hourly planner (one-time advice)</td><td>A few hundred dollars, once</td><td class="yes">Yes — when things get complex</td></tr>
+    <tr><td>1%-of-everything advisor (ongoing)</td><td>$300k–$500k+ over a lifetime</td><td class="no">Rarely — usually overkill</td></tr>
+    <tr><td>Commission products (whole life, annuities)</td><td>Hidden, often huge</td><td class="no">Almost never for young athletes</td></tr>
+  </table>
+
+  <h3 class="sub">The one phrase that protects you</h3>
+  <p>Learn these two words: <strong>"fee-only fiduciary."</strong></p>
+  <ul>
+    <li>A <strong>fiduciary</strong> is someone legally required to put your best interest first.</li>
+    <li><strong>Fee-only</strong> means they make money <em>only</em> from a fee you agree to — never from secret commissions for selling you stuff.</li>
+  </ul>
+  <div class="pull">Ask any advisor, straight up: "Are you a fee-only fiduciary, and how exactly do you get paid?" If the answer is fuzzy or they dodge it — walk away.</div>
+
+  <div class="do-now">
+    <span class="label">✓ Do This Now</span>
+    <ul>
+      <li>Before paying <strong>anyone</strong> to manage your money, ask: "How do you get paid?" Make them say an actual number.</li>
+      <li>Never buy a fund without checking its <strong>expense ratio.</strong> Aim for under 0.20%; the best are under 0.10%.</li>
+      <li>Be deeply skeptical of anyone selling <strong>whole life insurance or annuities</strong> to a young, healthy athlete.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CH 4 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">4</div>
+    <div class="ch-kicker">Chapter Four</div>
+    <div class="ch-title">The Simple Foundation</div>
+  </div>
+
+  <p class="lead">Investing is exciting. But if you skip the foundation, one bad week can wipe it out. Do these first, in order.</p>
+
+  <p>Before you put a single dollar into investments, you build a base that keeps you steady when life gets bumpy. Think of it like stretching before you play — boring, but it's what keeps you from getting hurt.</p>
+
+  <h3 class="sub">Step 1 — Build a starter emergency fund</h3>
+  <p>An "emergency fund" is just cash you set aside for life's surprises — a last-minute flight home, a cracked phone, a medical bill. Without it, an emergency forces you to borrow money or sell your investments at the worst possible time.</p>
+  <p>Start with a goal of <strong>$1,000 saved.</strong> Over time, build toward <strong>3 to 6 months of your basic living costs.</strong> Keep this money somewhere safe and easy to reach — not invested, not at risk.</p>
+
+  <h3 class="sub">Step 2 — Put your cash in a "high-yield" savings account</h3>
+  <p>A regular savings account at a big bank pays you almost nothing — like a few cents a year. A <strong>"high-yield savings account"</strong> (offered by many online banks) pays you real interest for the exact same safety. Same protection, same easy access — it just actually pays you.</p>
+  <div class="analogy">
+    <span class="label">Picture it like this</span>
+    <p>It's the same $5,000 sitting in a vault. One vault pays you a few cents a year; the other pays you real money — for doing absolutely nothing different. There's no reason to pick the empty one.</p>
+  </div>
+  <p>Use a high-yield savings account for your <strong>emergency fund</strong> and your <strong>tax set-aside</strong> from Chapter 2. Just know: this is safe storage that earns a little — it is <em>not</em> investing. That comes next.</p>
+
+  <h3 class="sub">Step 3 — Wipe out high-interest debt</h3>
+  <p>If you owe money on a <strong>credit card</strong>, that debt usually grows at 20% or more per year — faster than almost any investment could ever grow your money. Paying it off is like earning a guaranteed 20% return. Nothing else comes close.</p>
+  <div class="example">
+    <span class="label">Picture this</span>
+    <p>You have $1,000 on a credit card charging 22%, and you're wondering whether to invest $1,000 instead. Paying off the card is a guaranteed 22% "return." A typical investment might average far less and isn't guaranteed. The math isn't close — kill the card debt first.</p>
+  </div>
+  <p>(Lower-interest debt, like some student loans, is less urgent — that's a conversation for the planner in Chapter 6.)</p>
+
+  <div class="do-now">
+    <span class="label">✓ Do This Now</span>
+    <ul>
+      <li>Open a <strong>high-yield savings account</strong> online — it takes about 5 minutes.</li>
+      <li>Move your <strong>$1,000 starter emergency fund</strong> into it (this is separate from your tax account).</li>
+      <li>List any debts and their interest rates. Anything above ~8–10%, attack it now, starting with credit cards.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CH 5 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">5</div>
+    <div class="ch-kicker">Chapter Five</div>
+    <div class="ch-title">Investing Without Getting Ripped Off</div>
+  </div>
+
+  <p class="lead">Now the fun part — making your money grow. The secret nobody believes at first: good investing is supposed to be boring.</p>
+
+  <p>Forget everything movies taught you about investing — the yelling, the screens, the guy picking the perfect stock. Real wealth-building is calm and boring. Exciting is how people <em>lose</em> money. Boring is how they keep it and grow it.</p>
+
+  <h3 class="sub">The big idea: own a little of everything, cheaply, for a long time</h3>
+  <p>You do not need to pick winning companies. You don't need to watch the news or stare at charts. You just need to own a tiny piece of <em>thousands</em> of companies at once, and then leave it alone for years. There's one simple tool that does this for you: an <strong>index fund.</strong></p>
+
+  <h3 class="sub">What's an index fund? (in plain English)</h3>
+  <p>Betting on a single company is risky — if it crashes, you crash with it. An <strong>index fund</strong> solves that. With one purchase, it buys a tiny slice of <em>all</em> the big companies at once. So you're not betting on one team winning — you're betting that the whole economy grows over time, which historically it has.</p>
+  <div class="analogy">
+    <span class="label">Picture it like this</span>
+    <p>Picking one stock is like betting your whole paycheck on a single player to score. An index fund is like betting on the entire league — if the sport grows, you win, and no single player having a bad night can wipe you out. It's automatically spread out, and it's almost free to own.</p>
+  </div>
+  <p>A fund that tracks the <strong>"total stock market"</strong> or the <strong>"S&P 500"</strong> (a basket of 500 of the biggest U.S. companies) is the classic, boring, effective choice. Here's the kicker: this simple approach <strong>beats most highly-paid professional stock-pickers</strong> over time. That's not a theory — most expensive pros fail to beat a basic index fund. You win by being simple and cheap.</p>
+
+  <h3 class="sub">Where you keep it matters too: the Roth IRA</h3>
+  <p>This part sounds complicated and isn't. <em>Where</em> you hold your investments changes how much tax you pay on the profits. For most young people, the best starter "container" is a <strong>Roth IRA.</strong></p>
+  <ul>
+    <li>You put in money you've <strong>already paid tax on</strong> — and then <strong>all the growth comes out completely tax-free.</strong> Decades of profit, zero tax when you take it out later.</li>
+    <li>Because you're young, that tax-free growth has <em>decades</em> to compound. It's worth an enormous amount.</li>
+    <li>There's a yearly limit on how much you can put in (a few thousand dollars), and an income limit, but most college athletes fit easily.</li>
+  </ul>
+  <div class="analogy">
+    <span class="label">Don't get confused</span>
+    <p>A Roth IRA is not an investment itself — it's the <em>bucket.</em> You open the bucket at a brokerage, then put index funds <em>inside</em> it. Opening a Roth IRA but not buying anything inside is like buying a fridge and never putting food in it.</p>
+  </div>
+
+  <h3 class="sub">The "boring portfolio" that quietly wins</h3>
+  <p>Here's the whole strategy (remember: general education, not a personal recommendation for your exact situation):</p>
+  <ol>
+    <li>Open a <strong>Roth IRA</strong> at a big, low-cost brokerage (the well-known ones charge $0 to open and to buy).</li>
+    <li>Inside it, buy a <strong>broad, low-cost index fund</strong> (total market or S&P 500, expense ratio under 0.10%).</li>
+    <li><strong>Add money regularly</strong> — automatically, every month, no matter what the news says.</li>
+    <li><strong>Don't touch it.</strong> Don't panic and sell when it drops. Drops are normal and temporary.</li>
+  </ol>
+
+  <div class="example">
+    <span class="label">Picture this: why starting young wins</span>
+    <p>Money invested young has the most time to "compound" — that's when your money earns money, and then <em>that</em> money earns money too, like a snowball rolling downhill. A small amount invested in your early 20s can grow into far more than a larger amount invested in your 40s, purely because it had more time. Starting young is the single biggest advantage you have. Don't waste it.</p>
+  </div>
+
+  <h3 class="sub">What to avoid</h3>
+  <div class="warn">
+    <span class="label">Stay away from</span>
+    <p><strong>Meme stocks, crypto gambling, day-trading, "hot tips" from the internet.</strong> That's entertainment, not investing. If you ever play with it, use only money you can afford to lose completely — never your foundation. And avoid anything you can't explain in one simple sentence; if you don't understand it, don't buy it.</p>
+  </div>
+
+  <div class="do-now">
+    <span class="label">✓ Do This Now</span>
+    <ul>
+      <li>Open a <strong>Roth IRA</strong> at a major low-cost brokerage.</li>
+      <li>Set up an <strong>automatic monthly deposit</strong> — even a small one to start. The habit matters more than the amount.</li>
+      <li>Inside the Roth, buy a <strong>broad, low-cost index fund.</strong> Then leave it alone.</li>
+      <li>Make yourself one promise: <strong>no panic-selling when it dips. Ever.</strong></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CH 6 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">6</div>
+    <div class="ch-kicker">Chapter Six</div>
+    <div class="ch-title">Protecting Yourself</div>
+  </div>
+
+  <p class="lead">Money attracts people. The more visible you are, the more they come. This chapter keeps your money — and your name — safe.</p>
+
+  <h3 class="sub">Spotting scams and bad actors</h3>
+  <p>Most money scams share the same handful of warning signs. Learn them once and you'll spot them for life:</p>
+  <div class="warn">
+    <span class="label">Run if you hear any of these</span>
+    <p><strong>"Guaranteed" returns.</strong> No real investment guarantees big returns. None. Ever.<br>
+    <strong>"You have to act right now."</strong> Urgency is a manipulation trick. Real opportunities can wait a day.<br>
+    <strong>You don't understand it.</strong> Confusion is a sales tactic. If they can't explain it simply, that's on purpose.<br>
+    <strong>They slid into your DMs.</strong> Be extremely skeptical of any unsolicited "opportunity," crypto coach, or "I help athletes" cold message.</p>
+  </div>
+
+  <h3 class="sub">The "friends and family with a deal" problem</h3>
+  <p>The hardest money situations usually aren't strangers — they're people you love. A cousin's business that needs money. A teammate's "can't-miss" startup. A family member who needs a loan. Saying no feels terrible. But saying yes to the wrong one can sink you.</p>
+  <p>A simple rule keeps you safe and keeps the relationship intact:</p>
+  <div class="pull">Only ever risk money you'd be genuinely okay never seeing again — and never your tax money, emergency fund, or retirement.</div>
+  <p>"No" is a complete sentence. And if you want an easy out, blame your plan: <em>"My money's all locked into a long-term setup, I literally can't touch it right now."</em></p>
+
+  <h3 class="sub">Read before you sign</h3>
+  <p>NIL deals are contracts — legally binding promises. Before you sign anything meaningful, look for:</p>
+  <ul>
+    <li><strong>Exclusivity:</strong> Does this deal block you from working with competitors?</li>
+    <li><strong>Length:</strong> How long are you locked in?</li>
+    <li><strong>Rights:</strong> What can they use — your name, your face — where, and for how long?</li>
+    <li><strong>Your obligations:</strong> What exactly do you have to deliver (how many posts, appearances)?</li>
+  </ul>
+  <p>If a deal is more than pocket change, <strong>have someone who understands contracts review it first.</strong> A short paid review is cheap insurance against a bad multi-year commitment.</p>
+
+  <h3 class="sub">Should you set up an LLC?</h3>
+  <p>As your income grows, you might hear about forming an <strong>"LLC"</strong> — basically making your NIL activity into an official little business. It can offer some tax flexibility and legal protection. It's <strong>not</strong> necessary for your first small deals, and setting one up too early just adds paperwork. File it under "questions to ask a CPA once I'm earning steadily" — not something to rush into.</p>
+
+  <h3 class="sub">When you actually DO need a pro (without overpaying)</h3>
+  <p>You don't need a full-time money manager taking a cut of everything. But there are a few pros worth paying — the right way:</p>
+  <table>
+    <tr><th>Pro</th><th>When you need them</th><th>How to pay</th></tr>
+    <tr><td>CPA (tax pro)</td><td>As soon as you have real NIL income</td><td>Flat fee per session</td></tr>
+    <tr><td>Fee-only financial planner</td><td>When your money situation gets complex</td><td>Flat or hourly — never a % of your money</td></tr>
+    <tr><td>Lawyer</td><td>To review big or long contracts</td><td>Flat or hourly</td></tr>
+  </table>
+  <p>However you hire, ask the same questions: <strong>"Are you a fee-only fiduciary? How do you get paid? What's the total cost to me, in dollars?"</strong> Prefer flat or hourly fees over anyone who wants an ongoing percentage of everything you own. Get it in writing, and walk away from anyone vague about how they're paid.</p>
+
+  <div class="do-now">
+    <span class="label">✓ Do This Now</span>
+    <ul>
+      <li>Adopt the rule: <strong>an unsolicited DM "opportunity" is never real.</strong> Delete and move on.</li>
+      <li>Decide your personal <strong>"money I'd never miss" limit</strong> for helping friends and family — and never cross it.</li>
+      <li>For any meaningful contract, <strong>get a paid review before signing.</strong></li>
+      <li>Save the magic question in your phone notes: <em>"Are you a fee-only fiduciary, and how exactly do you get paid?"</em></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CH 7 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">7</div>
+    <div class="ch-kicker">Chapter Seven</div>
+    <div class="ch-title">Your Year-One Plan</div>
+  </div>
+
+  <p class="lead">Everything in this guide, turned into one simple checklist. Do them in order.</p>
+
+  <h3 class="sub">The universal order of operations</h3>
+  <p>No matter how much you earn, this is the order:</p>
+  <ol>
+    <li><strong>Set aside 30% for taxes</strong> the day money arrives — separate account. <em>(Ch. 2)</em></li>
+    <li><strong>Build a $1,000 starter emergency fund</strong> in a high-yield savings account. <em>(Ch. 4)</em></li>
+    <li><strong>Pay off high-interest debt</strong> (credit cards first). <em>(Ch. 4)</em></li>
+    <li><strong>Grow the emergency fund</strong> toward 3–6 months of expenses. <em>(Ch. 4)</em></li>
+    <li><strong>Open a Roth IRA</strong> and start automatic monthly investing into a low-cost index fund. <em>(Ch. 5)</em></li>
+    <li><strong>Keep it boring</strong> — keep adding, don't touch the investments. <em>(Ch. 5)</em></li>
+    <li><strong>Protect yourself</strong> — scam rules, contract reviews, the magic question. <em>(Ch. 6)</em></li>
+  </ol>
+
+  <h3 class="sub">Tailored to how much you earn</h3>
+
+  <h4 class="minor">If you're earning about $1,000–$10,000 a year</h4>
+  <ul>
+    <li>The tax set-aside still comes first, even on small amounts.</li>
+    <li>Build that $1,000 emergency fund.</li>
+    <li>Open the Roth IRA and invest even $25–$50 a month — at this stage the <em>habit</em> matters far more than the amount.</li>
+    <li>Do <strong>not</strong> pay anyone a percentage to manage this. Your situation is simple enough to handle yourself.</li>
+  </ul>
+
+  <h4 class="minor">If you're earning about $10,000–$50,000 a year</h4>
+  <ul>
+    <li>Everything above, but with bigger set-asides and a full 3–6 month emergency fund.</li>
+    <li><strong>See a CPA</strong> before your first tax season — non-negotiable at this level.</li>
+    <li>Try to put in the maximum your Roth IRA allows each year.</li>
+    <li>Start a real receipts/expenses system to lower your tax bill.</li>
+    <li>Ask your CPA whether forming an LLC makes sense yet.</li>
+  </ul>
+
+  <h4 class="minor">If you're earning $50,000 or more a year</h4>
+  <ul>
+    <li>Everything above, plus:</li>
+    <li>A <strong>CPA is mandatory</strong>, and those quarterly tax payments really matter now.</li>
+    <li>Consider a <strong>one-time, flat-fee financial planner</strong> (a fee-only fiduciary) for a personalized plan — paid hourly or flat, <em>never</em> as a percentage of your money.</li>
+    <li>Get <strong>every significant contract</strong> reviewed by a lawyer.</li>
+    <li>Stay disciplined. The bigger the money, the louder the temptation and the more people show up. Your boring plan is your edge.</li>
+  </ul>
+
+  <div class="pull">The plan never really changes — only the numbers get bigger. Master it now while the stakes are smaller, and you'll handle the big checks like a pro.</div>
+</div>
+
+<!-- ===================== CH 8 ===================== -->
+<div class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">8</div>
+    <div class="ch-kicker">Chapter Eight</div>
+    <div class="ch-title">Quick Reference &amp; Glossary</div>
+  </div>
+
+  <h3 class="sub">The 10-second gut checks</h3>
+  <ul>
+    <li><strong>Before spending a new check:</strong> "Did I move 30% to taxes? Have I waited 30 days?"</li>
+    <li><strong>Before buying any investment:</strong> "What's the expense ratio? Do I actually understand it?"</li>
+    <li><strong>Before hiring anyone:</strong> "Are they a fee-only fiduciary? How do they get paid, in dollars?"</li>
+    <li><strong>Before any 'opportunity':</strong> "Is it guaranteed or urgent? Then it's probably a scam."</li>
+  </ul>
+
+  <h3 class="sub">The magic questions for any advisor</h3>
+  <ol>
+    <li>"Are you a <strong>fiduciary</strong>, legally required to act in my best interest — in writing?"</li>
+    <li>"Are you <strong>fee-only</strong>, or do you earn commissions from products you sell me?"</li>
+    <li>"What is the <strong>total cost to me, in dollars</strong>, per year?"</li>
+    <li>"Can you explain your recommendation in plain English?"</li>
+  </ol>
+
+  <h3 class="sub">Glossary — every term, in plain English</h3>
+  <dl class="gloss">
+    <dt>Index fund</dt><dd>A single investment that owns a tiny piece of hundreds or thousands of companies at once. Cheap, spread-out, boring, and effective.</dd>
+    <dt>Expense ratio</dt><dd>The yearly fee a fund charges you to own it, shown as a percentage. Lower is better — under 0.10% is great.</dd>
+    <dt>Roth IRA</dt><dd>A retirement "bucket" you fund with money you've already paid tax on; all the growth later comes out tax-free. Excellent for young earners.</dd>
+    <dt>High-yield savings account (HYSA)</dt><dd>A safe savings account that actually pays meaningful interest. Perfect for your emergency fund and tax money.</dd>
+    <dt>Fiduciary</dt><dd>Someone legally required to act in your best interest.</dd>
+    <dt>Fee-only</dt><dd>An advisor paid only by a fee you agree to (flat or hourly) — never by hidden commissions. The honest model.</dd>
+    <dt>1099</dt><dd>The tax form a company sends reporting money it paid you. The IRS gets a copy, so always report it.</dd>
+    <dt>Estimated / quarterly taxes</dt><dd>Tax payments you make four times a year because no employer is withholding for you.</dd>
+    <dt>Self-employment tax</dt><dd>The roughly 15% tax covering Social Security and Medicare that you owe when you work for yourself.</dd>
+    <dt>Compounding</dt><dd>Your money earning money — and then <em>that</em> money earning money too. A snowball that grows faster the longer it rolls. The reason starting young is a superpower.</dd>
+    <dt>LLC</dt><dd>A simple way to turn your activity into an official business, which can offer tax flexibility and legal protection. Usually only worth it once you're earning steadily.</dd>
+    <dt>Expense / write-off</dt><dd>Money you spend to earn your income, which can lower your tax bill. Keep the receipts.</dd>
+  </dl>
+</div>
+
+<!-- ===================== BACK ===================== -->
+<div class="back">
+  <h2>You don't have to be a finance genius.</h2>
+  <div class="rule"></div>
+  <p>You just have to do a few simple things and avoid a few big mistakes. Pay your taxes. Dodge the fees. Keep it boring. Don't get scammed.</p>
+  <p>Do that, and the money you're earning right now can set you up for the rest of your life — long after the games are over.</p>
+  <p style="margin-top:.4in;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:800;color:var(--ink)">The NIL Playbook — for the people who earned it.</p>
+  <div class="disclaimer-band" style="text-align:left;margin-top:.5in">
+    <strong>Disclaimer.</strong> The NIL Playbook provides educational content only. It is not personalized financial, tax, investment, or legal advice, and nothing in it is a recommendation to buy any specific investment or product. Tax rules, contribution limits, and rates change over time and vary by individual and state — confirm current details with a licensed professional who knows your situation. Investing involves risk, including possible loss of the money you invest.
+  </div>
+</div>
+
+</body>
+</html>
