@@ -17,15 +17,28 @@ Do them in this order. Each step says exactly where to paste each value — almo
 
 ---
 
-## ✅ Step 2 — Put the site online (15 min) — easiest path: Netlify Drop
-1. Go to **app.netlify.com/drop**.
-2. **Drag the entire `site/` folder** onto the page. It uploads and gives you a live URL instantly (e.g. `random-name.netlify.app`).
-3. In Netlify → **Site settings → Domain management**, add your custom domain from Step 1 and follow their instructions to point it (they walk you through DNS). Netlify gives you free HTTPS automatically.
+## ✅ Step 2 — Put the site online (15 min)
 
-**Alternatives (all free, all fine):**
-- **Vercel** (vercel.com) — drag-and-drop or connect a folder.
-- **Cloudflare Pages** — upload the `site/` folder.
-- **GitHub Pages** — push `site/` to a repo and enable Pages.
+### Recommended: connect the GitHub repo (auto-deploys on every change)
+In Netlify: **Add new site → Import an existing project → GitHub → pick `the-nil-playbook`.** On the **Build settings** screen, enter exactly:
+
+| Field | Value |
+|---|---|
+| Base directory | *(leave empty)* |
+| Package directory | *(leave empty)* |
+| Build command | *(leave empty — it's plain static HTML, nothing to build)* |
+| **Publish directory** | **`site`** ← the only one that matters |
+| Functions directory | leave default (`netlify/functions`) — unused |
+| Build status | **Active builds** |
+
+Click **Deploy**. You get a live `…netlify.app` URL. Because it's Git-connected, **every push to `main` auto-deploys** — so anything we add later goes live by itself.
+
+> The repo includes a **`netlify.toml`** that already sets `publish = "site"`, so Netlify will pick `site` automatically even if you leave the field blank.
+
+Then in **Site settings → Domain management**, add your custom domain from Step 1 (Netlify walks you through DNS and gives free HTTPS).
+
+### Simplest one-off alternative: Netlify Drop
+Go to **app.netlify.com/drop** and **drag the `site/` folder** onto the page — instant live URL, no Git. (You'd re-drag to update it, so the Git method above is better long-term.) Vercel, Cloudflare Pages, and GitHub Pages also work — just set the publish/output folder to `site`.
 
 That's it — your site is live. Now wire up the money and email pieces below.
 
