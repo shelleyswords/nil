@@ -100,7 +100,10 @@ section{padding:72px 0}
 .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
   background:radial-gradient(circle,rgba(242,183,5,.20),transparent 70%);pointer-events:none}
 .hero .eyebrow{background:rgba(242,183,5,.16);color:var(--gold)}
-.hero h1{font-size:clamp(2.2rem,5.4vw,3.7rem);font-weight:900;max-width:16ch}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.7rem);font-weight:900;max-width:16ch;color:#fff}
+/* headings on dark backgrounds must be light (override the default dark heading color) */
+.hero h1,.hero h2,.hero h3,.hero h4,
+.section-ink h1,.section-ink h2,.section-ink h3,.section-ink h4{color:#fff}
 .hero .sub{font-size:clamp(1.08rem,2.2vw,1.32rem);color:#cdd9e4;margin:20px 0 32px;max-width:48ch}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .hero-note{color:#9fb2c4;font-size:.92rem;margin-top:16px}
