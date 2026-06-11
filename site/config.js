@@ -15,10 +15,11 @@ window.NIL_CONFIG = {
   // --- Where buyers land after paying (unlisted access page). Set this as Stripe's success URL. ---
   COURSE_ACCESS_URL: "/course/?access=member",        // keep, or point to an unlisted page you choose
 
-  // --- Email capture. Paste your provider's form ACTION endpoint (e.g. ConvertKit/Mailchimp/Formspree). ---
-  // The form POSTs the email here. See GO-LIVE.md for the exact value to copy from your provider.
-  EMAIL_ENDPOINT: "REPLACE_ME_EMAIL_FORM_ENDPOINT",
-  EMAIL_FIELD_NAME: "email",                          // some providers use "email_address" — check provider docs
+  // --- Email capture -> Resend via our Netlify serverless function. ---
+  // The form POSTs {email} here; the function (netlify/functions/subscribe.js) sends
+  // the checklist via Resend. The Resend API key lives in Netlify env vars, NOT here.
+  EMAIL_ENDPOINT: "/.netlify/functions/subscribe",
+  EMAIL_FIELD_NAME: "email",
 
   // --- Analytics (optional). Paste your measurement ID, e.g. "G-XXXXXXX". Leave blank to skip. ---
   ANALYTICS_ID: "",

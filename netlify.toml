@@ -5,6 +5,10 @@
   publish = "site"
   command = ""
 
+# Serverless function that handles email signups via Resend.
+[functions]
+  directory = "netlify/functions"
+
 # Nice-to-have security/caching headers for the static site.
 [[headers]]
   for = "/*"
