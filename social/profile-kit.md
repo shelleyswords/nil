@@ -1,4 +1,4 @@
-# The NIL Playbook — Profile Kit
+# The NIL Game Plan — Profile Kit
 ### Bios, banners, handle, and link-in-bio structure for all 4 platforms
 
 *Set this up once before launch. Consistency across platforms = a recognizable brand. Every profile points to the same place: the free checklist landing page (the email-capture engine).*
@@ -7,11 +7,11 @@
 
 ## The handle (use everywhere)
 
-**Recommended: `@thenilplaybook`**
+**Recommended: `@thenilgameplan`**
 
 - Use the **exact same handle on TikTok, YouTube, Instagram, and Facebook.** One name, easy to find, easy to tag, easy to say out loud in a video.
-- **Display name** on every platform: **The NIL Playbook**
-- **Fallback handles** if `@thenilplaybook` is taken anywhere (keep it consistent — pick ONE fallback and use it on all platforms): `@nilplaybook`, `@thenilplaybook_`, `@nil.playbook`
+- **Display name** on every platform: **The NIL Game Plan**
+- **Fallback handles** if `@thenilgameplan` is taken anywhere (keep it consistent — pick ONE fallback and use it on all platforms): `@nilplaybook`, `@thenilgameplan_`, `@nil.playbook`
 - **Reserve the handle on all four platforms immediately**, even on platforms you won't post to first, so no one else takes it.
 
 ---
@@ -67,8 +67,8 @@ Instagram allows line breaks and emojis. Use them for scannability.
 ### YouTube — channel description (long-form; first ~125 chars show before "...more")
 YouTube gives you a lot of room. Front-load the hook in the first sentence (that's what shows in search and previews), then expand.
 
-**Channel handle:** @thenilplaybook
-**Channel name:** The NIL Playbook
+**Channel handle:** @thenilgameplan
+**Channel name:** The NIL Game Plan
 
 **Channel description:**
 > Plain-English money tips for NCAA athletes earning NIL money. Keep more of your check — no jargon, no suits, no fees you didn't agree to.
@@ -89,12 +89,12 @@ YouTube gives you a lot of room. Front-load the hook in the first sentence (that
 ### Facebook — Page bio (short "Bio" ~101 chars) + "About" (longer)
 Facebook skews slightly older — great for reaching **parents of athletes**. Keep the tone the same but lean a touch more into "protect your athlete."
 
-**Page name:** The NIL Playbook
+**Page name:** The NIL Game Plan
 **Short bio (~101 char limit):**
 > Plain-English money tips for college athletes & their families. Keep your NIL check. Not advice.
 
 **About / longer description:**
-> The NIL Playbook teaches NCAA athletes — and the parents who help them — how to keep, grow, and protect their NIL money. Plain English, zero jargon, no suits, no fees you didn't agree to.
+> The NIL Game Plan teaches NCAA athletes — and the parents who help them — how to keep, grow, and protect their NIL money. Plain English, zero jargon, no suits, no fees you didn't agree to.
 >
 > Quick videos on taxes, fees, scams, and simple money wins. Everything is educational only, not personalized financial, tax, or legal advice.
 >
@@ -110,7 +110,7 @@ Facebook skews slightly older — great for reaching **parents of athletes**. Ke
 - **Main line (large, white/gold):** "Keep more of your NIL check."
 - **Sub-line (smaller, white):** Plain-English money tips for college athletes • Not advice
 - **Bottom-right tag:** New Shorts weekly 💸
-- **Visual:** subtle navy stadium-at-dusk gradient, a faint gold rising chart line crossing behind the text, The NIL Playbook wordmark.
+- **Visual:** subtle navy stadium-at-dusk gradient, a faint gold rising chart line crossing behind the text, The NIL Game Plan wordmark.
 - **AI prompt:** *"Wide cinematic banner, deep navy stadium at dusk, faint gold upward stock-chart line crossing the frame, clean modern bold white sans-serif headline space centered, premium athletic finance brand, gold accents, no people, no logos."*
 
 ### Facebook cover photo (851×315)
@@ -119,7 +119,7 @@ Facebook skews slightly older — great for reaching **parents of athletes**. Ke
 - **Visual:** same navy + gold system, a clean checklist graphic on the right with 3 gold checkmarks.
 
 ### Instagram — no banner, but design a cohesive look:
-- **Profile photo:** The NIL Playbook wordmark or monogram "NP" in gold on navy circle (use the SAME image on every platform so the avatar is instantly recognizable).
+- **Profile photo:** The NIL Game Plan wordmark or monogram "NP" in gold on navy circle (use the SAME image on every platform so the avatar is instantly recognizable).
 - **Pinned 3 posts (the "first impression row"):** pin one fee-outrage (Script 28), one tax (Script 22), one simple-win (Script 38) — so a new visitor's top row instantly shows the 3 core value props.
 - **Story highlight covers (gold icons on navy):** "Start Here" · "Taxes" · "Fees" · "Scams" · "Invest" · "Free Checklist".
 
@@ -137,14 +137,14 @@ You need a single link that works in every bio. Use a simple link-in-bio page (y
 | Order | Button label | Goes to | Purpose |
 |---|---|---|---|
 | 1 | **🆓 Free NIL Money Checklist (start here)** | Landing page w/ email opt-in | **The engine** — capture email. Biggest button, top of page. |
-| 2 | **💰 Get The NIL Playbook — $49** | Playbook sales page | Core offer ($29 launch price). |
+| 2 | **💰 Get The NIL Game Plan — $49** | Playbook sales page | Core offer ($29 launch price). |
 | 3 | **📖 Read the free guide / blog** | Guide or blog content | Trust-builder for people not ready to opt in. |
 | 4 | **▶️ Watch: Start Here (best videos)** | Pinned/playlist | Sends new visitors to your strongest content. |
 | 5 | **❓ When do you actually need an advisor?** | Lead-magnet article | Soft value, secondary capture. |
 | (later) | **⭐ Join the community — premium** | Premium tier | Recurring revenue once audience exists. |
 
 **Link-in-bio page copy (header):**
-> # The NIL Playbook
+> # The NIL Game Plan
 > Keep, grow, and protect your NIL money — without getting ripped off.
 > *Educational only, not financial advice.*
 > 👇 Start with the free checklist.
@@ -159,7 +159,7 @@ You need a single link that works in every bio. Use a simple link-in-bio page (y
 
 ## Pinned content + first-impression checklist (do this on launch day)
 
-- [ ] Same handle reserved on all 4 platforms (`@thenilplaybook`)
+- [ ] Same handle reserved on all 4 platforms (`@thenilgameplan`)
 - [ ] Same profile photo (navy/gold "NP" mark) uploaded everywhere
 - [ ] Bio set per platform (above)
 - [ ] Link-in-bio page live, free checklist button at the top

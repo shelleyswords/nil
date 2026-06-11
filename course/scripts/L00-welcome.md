@@ -21,7 +21,7 @@ Because nobody teaches this part. You learned the playbook for your sport. You d
 
 That's what this is.
 
-Welcome to The NIL Playbook. I'm your narrator, and I'm gonna walk you through every video in here like a teammate who already made the mistakes so you don't have to.
+Welcome to The NIL Game Plan. I'm your narrator, and I'm gonna walk you through every video in here like a teammate who already made the mistakes so you don't have to.
 
 Here's the deal in one sentence: [pause] **Pay your taxes, dodge the high fees, keep it simple, don't get scammed, and let boring investments do the work.** That's the whole game. Everything else is just detail.
 
@@ -41,9 +41,9 @@ Cool? [pause] Start with the next video. Let's keep your first check from becomi
 
 | # | Narration beat | On-screen text / caption | Visual (B-roll keyword OR AI gen prompt) |
 |---|---|---|---|
-| 1 | "You just got your first real NIL money..." | THE NIL PLAYBOOK | AI prompt: clean navy background, gold "NIL PLAYBOOK" wordmark animating in, subtle green accent line, athletic, premium, minimal |
+| 1 | "You just got your first real NIL money..." | THE NIL GAME PLAN | AI prompt: clean navy background, gold "NIL PLAYBOOK" wordmark animating in, subtle green accent line, athletic, premium, minimal |
 | 2 | "Nobody teaches this part... no playbook for the money." | No playbook for the money? | B-roll: college athlete checking phone in locker room, soft focus |
-| 3 | "Welcome to The NIL Playbook... like a teammate." | Welcome | AI prompt: navy/green flat-design illustration of a sports playbook opening, gold X's and O's turning into dollar signs |
+| 3 | "Welcome to The NIL Game Plan... like a teammate." | Welcome | AI prompt: navy/green flat-design illustration of a sports playbook opening, gold X's and O's turning into dollar signs |
 | 4 | "Pay your taxes, dodge the fees, keep it simple..." | THE WHOLE GAME, IN ONE LINE | Animated text slide, navy bg, each phrase ("Pay taxes / Avoid fees / Keep it simple / Don't get scammed / Let it grow") pops in gold |
 | 5 | "There are seven modules..." | 7 MODULES | AI prompt: clean vertical roadmap graphic, 7 numbered stops, navy/green/gold, athletic field yard-line styling |
 | 6 | "Mindset... taxes... foundation... investing... protect... plan." | Mindset → Taxes → Foundation → Investing → Protect → Plan | Animated module list, icons appearing per item (helmet, calculator, shield, chart, lock, checklist) |

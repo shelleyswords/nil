@@ -54,11 +54,11 @@ This isn't a limitation — it's the safe, scalable, and honest way to build thi
 
 ## 5. Brand & name
 
-**Recommended name: `The NIL Playbook`**
+**Recommended name: `The NIL Game Plan`**
 
 - "Playbook" is athlete-native language — it signals *a step-by-step plan you follow*, which is exactly the product.
 - Clear, descriptive, and SEO-friendly (people will literally search "NIL money" and "NIL taxes").
-- Works as a brand across the guide, the socials (@thenilplaybook), and the site.
+- Works as a brand across the guide, the socials (@thenilgameplan), and the site.
 
 **Strong alternates** (in case of trademark/handle conflicts):
 - `Rookie Wealth` — broader, punchier, less tied to NIL specifically (good if you ever expand beyond athletes)
@@ -76,7 +76,7 @@ A three-rung ladder — each rung warms people up for the next:
 | Rung | Product | Price | Purpose |
 |---|---|---|---|
 | **Free** | Daily/weekly tips on TikTok, Instagram, YouTube Shorts + a free 1-page "NIL Money Starter Checklist" (email opt-in) | $0 | Build audience + trust, grow email list |
-| **Core** | **The NIL Playbook** — the full guide/course (PDF + optional video). The flagship product. | **$49 one-time** (launch price $29) | The main offer everything points to |
+| **Core** | **The NIL Game Plan** — the full guide/course (PDF + optional video). The flagship product. | **$49 one-time** (launch price $29) | The main offer everything points to |
 | **Premium (later)** | Templates pack, tax/quarterly-payment worksheets, private community, monthly "office hours" Q&A | $9–19/mo or $99/yr | Recurring revenue once audience exists |
 
 **Why $49 one-time:** Low enough that a 19-year-old with one NIL deal buys without thinking; high enough to signal real value and fund ads. The $29 launch price creates urgency and early reviews. We can raise it as the brand grows.
@@ -96,7 +96,7 @@ A three-rung ladder — each rung warms people up for the next:
 1. A 30-second TikTok ("The fee that's stealing your future") gets views.
 2. Caption/bio sends them to the landing page for the **free** checklist.
 3. They give their email → get the checklist → now we can reach them directly.
-4. Email sequence + more content → they buy **The Playbook**.
+4. Email sequence + more content → they buy **The Game Plan**.
 5. Buyers later upgrade to the **premium** community/tools.
 
 ---
@@ -119,7 +119,7 @@ A three-rung ladder — each rung warms people up for the next:
 | Phase | What | Timeline |
 |---|---|---|
 | **0. Foundation** | This document. Name, positioning, pricing locked. | ✅ Now |
-| **1. Build core** | Write The Playbook + the free checklist | Week 1–2 |
+| **1. Build core** | Write The Game Plan + the free checklist | Week 1–2 |
 | **2. Build funnel** | Landing page (free checklist opt-in + Playbook sales page) | Week 2 |
 | **3. Seed content** | 20–30 social posts/scripts banked and ready | Week 2–3 |
 | **4. Soft launch** | Post daily, drive to free checklist, sell Playbook at $29 | Week 3–4 |
@@ -130,10 +130,10 @@ A three-rung ladder — each rung warms people up for the next:
 ## 10. Open decisions to revisit
 
 - Final **name** (pending handle/trademark check)
-- Whether the Playbook is **PDF-only** at launch or **PDF + video** from day one
+- Whether the Game Plan is **PDF-only** at launch or **PDF + video** from day one
 - Payment/delivery platform (Gumroad, Stan Store, Podia, or a custom site)
 - Whether to involve a **licensed CPA/advisor** as a credibility partner/reviewer
 
 ---
 
-*Next deliverable: **#2 — The NIL Playbook (the guide itself).** This foundation drives its voice, structure, and the legal framing.*
+*Next deliverable: **#2 — The NIL Game Plan (the guide itself).** This foundation drives its voice, structure, and the legal framing.*

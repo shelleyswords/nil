@@ -47,7 +47,7 @@ If their answer is fuzzy, vague, or they dodge the dollar amount — walk away. 
 Tomorrow, I'll show you the simple foundation that comes *before* you invest a single dollar. It's boring. That's the point.
 
 Talk soon,
-The NIL Playbook
+The NIL Game Plan
 
 No jargon. No suits. No fees you didn't sign up for.
 

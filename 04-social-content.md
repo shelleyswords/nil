@@ -11,7 +11,7 @@
 2. **Hook in the first 2 seconds** or they scroll. Lead with the surprising claim.
 3. **Every video ends with the same call to action:** "Free checklist — link in bio."
 4. **Post consistently** (aim daily, or 4–5x/week). Volume + consistency beats perfection.
-5. **The link in bio goes to the landing page** → they get the free checklist → you get their email → email sells the Playbook.
+5. **The link in bio goes to the landing page** → they get the free checklist → you get their email → email sells the Game Plan.
 
 ---
 

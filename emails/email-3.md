@@ -46,7 +46,7 @@ Do those, and you've got a foundation most grown adults don't have.
 Tomorrow: the fun part. How to actually grow your money — without getting ripped off.
 
 Talk soon,
-The NIL Playbook
+The NIL Game Plan
 
 No jargon. No suits. No fees you didn't sign up for.
 

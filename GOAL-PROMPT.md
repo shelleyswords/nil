@@ -1,7 +1,7 @@
-# /goal — Build the complete, launch-ready "NIL Playbook" program
+# /goal — Build the complete, launch-ready "NIL Game Plan" program
 
 ## MISSION
-Build the entire **NIL Playbook** program end-to-end and make it 100% launch-ready. The NIL Playbook is a low-cost educational product that teaches NCAA college athletes how to keep, grow, and protect their NIL (Name, Image, Likeness) money — without overpaying financial advisors. The centerpiece is a high-quality, fast, **SEO- and AIO-optimized website** that serves as the home base for all video content and sells the guide. When you are done, the only things left for a human to do are: buy a domain, upload the finished site folder to a host, paste in account keys (email + payment), and add real video URLs. Everything else must be complete, polished, and verified.
+Build the entire **NIL Game Plan** program end-to-end and make it 100% launch-ready. The NIL Game Plan is a low-cost educational product that teaches NCAA college athletes how to keep, grow, and protect their NIL (Name, Image, Likeness) money — without overpaying financial advisors. The centerpiece is a high-quality, fast, **SEO- and AIO-optimized website** that serves as the home base for all video content and sells the guide. When you are done, the only things left for a human to do are: buy a domain, upload the finished site folder to a host, paste in account keys (email + payment), and add real video URLs. Everything else must be complete, polished, and verified.
 
 Optimize relentlessly for two things: **(1) genuine value and clarity for an 18–22-year-old with zero financial experience**, and **(2) being discoverable by everyone — traditional search engines AND AI answer engines.**
 
@@ -26,10 +26,10 @@ Working directory contains prior work — read it first and build on it; do not 
 - `04-social-content.md` — 20 video scripts + social strategy.
 - `index.html` — a first-draft landing page (replace/upgrade into the full site).
 - `build/guide-print.html`, `build/checklist-print.html` — print-styled HTML that renders to the PDFs.
-- `The-NIL-Playbook.pdf`, `NIL-Money-Starter-Checklist.pdf` — the current PDF products.
+- `The-NIL-Game-Plan.pdf`, `NIL-Money-Starter-Checklist.pdf` — the current PDF products.
 
 **Brand (keep consistent everywhere):**
-- Name: **The NIL Playbook**. Tagline: *"No jargon. No suits. No fees you didn't sign up for."*
+- Name: **The NIL Game Plan**. Tagline: *"No jargon. No suits. No fees you didn't sign up for."*
 - Voice: a confident teammate, not a suit. Talks to athletes, never down to them. Anti-jargon is the personality.
 - Colors: ink navy `#0b1f33`, field green `#0e7c5a` / `#0a5e44`, trophy gold `#f2b705`, mist `#f4f7f9`.
 - Target reader: mid-tier NIL earners ($5k–$50k/yr), but content serves all athletes.
@@ -67,7 +67,7 @@ A complete multi-page site. Every page: responsive, fast, accessible, on-brand, 
 
 Build at least these pages:
 1. **Home** — hero, the problem, the "$400k fee" hook, what's inside, social proof placeholders, free-checklist opt-in, primary CTA to the guide. Clear path to videos and blog.
-2. **The Playbook (sales page)** — long-form sales page for the $49 guide: who it's for, what's inside (8 chapters), sample/preview, FAQ, pricing ($29 launch / $49), strong CTA wired to a configurable **Stripe** checkout link (use a Stripe Payment Link / Stripe-hosted Checkout — no backend required; a single `CONFIG.CHECKOUT_URL` placeholder). Money-back-style reassurance where truthful.
+2. **The Game Plan (sales page)** — long-form sales page for the $49 guide: who it's for, what's inside (8 chapters), sample/preview, FAQ, pricing ($29 launch / $49), strong CTA wired to a configurable **Stripe** checkout link (use a Stripe Payment Link / Stripe-hosted Checkout — no backend required; a single `CONFIG.CHECKOUT_URL` placeholder). Money-back-style reassurance where truthful.
 3. **Free Checklist (opt-in / lead magnet)** — dedicated landing page with a **working email capture form** wired to a configurable provider (see Deliverable 5). On submit: success state + instructions; the form must actually POST to the provider via a single clearly-labeled config value.
 4. **Videos / Watch** — the content hub. A responsive grid that embeds the user's videos and links out to their channels (TikTok, YouTube Shorts, Facebook, Instagram). Build the full structure with **clearly-labeled placeholders** (sample embed slots + a simple data file like `videos.json` the user fills in with video IDs/URLs). Include lazy-loaded embeds and `VideoObject` structured data per video. Add prominent follow buttons for all platforms.
 5. **Course** — the step-by-step video course home + mobile-first lesson player. See Deliverable 3.5.
@@ -82,7 +82,7 @@ Global elements: sticky header with nav + persistent CTA; footer with nav, socia
 ---
 
 ## DELIVERABLE 2 — THE PROGRAM CONTENT (the products)
-1. **The full guide** — finalize and polish the 8-chapter NIL Playbook. Re-render the polished PDF from print HTML. Also produce a **web (HTML) version** of the guide for buyers and for SEO (can be gated/teaser on the public site, full version delivered post-purchase). Ensure accuracy of all financial concepts and that every term is defined and every figure illustrated with an example. Keep the education-not-advice framing and disclaimers.
+1. **The full guide** — finalize and polish the 8-chapter NIL Game Plan. Re-render the polished PDF from print HTML. Also produce a **web (HTML) version** of the guide for buyers and for SEO (can be gated/teaser on the public site, full version delivered post-purchase). Ensure accuracy of all financial concepts and that every term is defined and every figure illustrated with an example. Keep the education-not-advice framing and disclaimers.
 2. **The free checklist** — finalize and re-render the polished 1-page PDF. Make a matching web version for the opt-in confirmation page.
 3. **Accuracy pass** — review all tax/investing specifics for correctness and current general accuracy; where exact figures change yearly (contribution limits, tax brackets, dates), phrase as general guidance and add a "verify current figures with a professional" note. Flag anything that a CPA should confirm in `BUILD-LOG.md`.
 
@@ -149,7 +149,7 @@ The user wants to be "found by all" — including ChatGPT, Perplexity, Google AI
 - **`llms.txt` and `llms-full.txt`** at the site root: a concise, well-structured index of the site's key pages and a plain-text summary of the core guidance, following the emerging llms.txt convention, so AI crawlers can understand and cite the site.
 - **Allow reputable AI crawlers** in `robots.txt` (e.g., `GPTBot`, `PerplexityBot`, `ClaudeBot`/`Anthropic-AI`, `Google-Extended`, `CCBot`) since the goal is maximum discoverability. Document this choice.
 - **E-E-A-T / trust signals:** clear About page, stated mission and stance, transparent disclaimers, contact info, consistent NAP/brand, dated and "last updated" content, and cite reputable general sources (e.g., IRS basics, SEC investor education) where appropriate without giving advice.
-- **Entity clarity:** consistent naming, a clear one-line description of what The NIL Playbook is, and an `Organization`/`Author` schema so engines understand the entity.
+- **Entity clarity:** consistent naming, a clear one-line description of what The NIL Game Plan is, and an `Organization`/`Author` schema so engines understand the entity.
 - **Freshness:** include visible published/updated dates and keep `dateModified` in schema.
 
 ---

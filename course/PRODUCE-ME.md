@@ -1,4 +1,4 @@
-# PRODUCE-ME — The NIL Playbook Video Course
+# PRODUCE-ME — The NIL Game Plan Video Course
 
 This is the production checklist for turning the lesson scripts into finished videos.
 

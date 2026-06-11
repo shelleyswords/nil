@@ -1,4 +1,4 @@
-/* THE NIL PLAYBOOK — shared site JS (progressive enhancement only).
+/* THE NIL GAME PLAN — shared site JS (progressive enhancement only).
    The site fully works with JS disabled; this adds nav toggle, config-driven
    links, email capture wiring, and optional analytics. */
 (function () {

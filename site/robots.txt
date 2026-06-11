@@ -1,4 +1,4 @@
-# The NIL Playbook — robots.txt
+# The NIL Game Plan — robots.txt
 # We WANT to be found by everyone, including AI answer engines.
 
 User-agent: *
@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://thenilplaybook.com/sitemap.xml
+Sitemap: https://thenilgameplan.app/sitemap.xml

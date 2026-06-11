@@ -1,14 +1,14 @@
 # The NIL Money Starter Checklist
 ### Free 1-pager — the email-capture magnet
 
-*This is the free giveaway. People trade their email to get it. It delivers real value in one page, and it naturally sells the full Playbook by showing how much more there is to know. Design this as a clean, single-page PDF.*
+*This is the free giveaway. People trade their email to get it. It delivers real value in one page, and it naturally sells the full Game Plan by showing how much more there is to know. Design this as a clean, single-page PDF.*
 
 ---
 
 ## 🏈 The NIL Money Starter Checklist
 **7 things to do with your NIL money before you spend a dollar**
 
-*From The NIL Playbook — the plain-English money guide for college athletes.*
+*From The NIL Game Plan — the plain-English money guide for college athletes.*
 
 ---
 
@@ -37,9 +37,9 @@ Before you let ANYONE manage your money, ask: *"Are you a fee-only fiduciary, an
 
 **You just did more than 95% of athletes ever do. 🙌**
 
-But this is the starter version. The full **NIL Playbook** shows you *exactly how* to do each step — the accounts to open, the tax traps to dodge, the scams to avoid, the "friends with a deal" problem, contract red flags, and a step-by-step year-one plan tailored to how much you earn.
+But this is the starter version. The full **NIL Game Plan** shows you *exactly how* to do each step — the accounts to open, the tax traps to dodge, the scams to avoid, the "friends with a deal" problem, contract red flags, and a step-by-step year-one plan tailored to how much you earn.
 
-**→ Get the full NIL Playbook for $29 (launch price) at [yoursite.com]**
+**→ Get the full NIL Game Plan for $29 (launch price) at [yoursite.com]**
 
 ---
 

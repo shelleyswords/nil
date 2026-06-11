@@ -1,4 +1,4 @@
-# The NIL Playbook — Faceless Video Scripts (Vol. 2)
+# The NIL Game Plan — Faceless Video Scripts (Vol. 2)
 ### 32 NEW production-ready short-form packages (Scripts 21–52)
 
 *These are NEW scripts that go deeper on Chapters 1–8 of the guide. They do NOT duplicate the 20 scripts already in `04-social-content.md` (scripts 1–20). Use those as your seed library; use these to scale.*
@@ -25,7 +25,7 @@ Every video is **FACELESS**. There is no person on camera. Each video = **one co
 - **No faces of real people / no team logos / no real brand names.** Use generic athletic imagery and made-up screen UIs.
 
 ### The standard END CARD (use on EVERY video)
-> **VISUAL:** Navy background, gold + white text animates in. The NIL Playbook wordmark bottom-center.
+> **VISUAL:** Navy background, gold + white text animates in. The NIL Game Plan wordmark bottom-center.
 > **ON-SCREEN:** "FREE: The NIL Money Starter Checklist — 7 moves before you spend a dollar. 👉 Link in bio."
 > **VOICEOVER:** "I put the first moves in a free checklist — link in my bio."
 

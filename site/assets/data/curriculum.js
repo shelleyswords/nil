@@ -1,11 +1,11 @@
-/* THE NIL PLAYBOOK — Course curriculum data.
+/* THE NIL GAME PLAN — Course curriculum data.
    Loaded as a plain script (no fetch) so the player works on any host AND when
    opened locally. After filming each faceless lesson video, paste its embed URL
    into the matching `video` field below (YouTube/Vimeo embed URL, or a file path).
    Leave `video` empty ("") to show the "coming soon" placeholder.
    `free: true` lessons are the free preview; the rest unlock after purchase. */
 window.NIL_CURRICULUM = {
-  title: "The NIL Playbook Course",
+  title: "The NIL Game Plan Course",
   modules: [
     {
       id: "m0", title: "Welcome",

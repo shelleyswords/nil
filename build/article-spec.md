@@ -5,9 +5,9 @@
 Every article you write must reuse that file's exact `<head>` boilerplate, `<nav>`, `<footer>`, the email-capture `<section>`, and the script tags at the bottom — only changing the title/description/canonical/slug/schema and the article body. Write each as a complete standalone `.html` file in `/Users/jamiedewar/Desktop/AI/Projects/NIL/site/blog/`.
 
 ## Per-article requirements
-- **Title tag:** `<Specific Title> | The NIL Playbook` (under ~60 chars where possible).
+- **Title tag:** `<Specific Title> | The NIL Game Plan` (under ~60 chars where possible).
 - **Meta description:** unique, <155 chars, includes the target keyword naturally.
-- **Canonical + og:url:** `https://thenilplaybook.com/blog/<slug>.html`
+- **Canonical + og:url:** `https://thenilgameplan.app/blog/<slug>.html`
 - **JSON-LD:** include `Article`, `BreadcrumbList`, and `FAQPage` blocks (copy the pillar's pattern; update headline, url, and the FAQ Q&As to match the article). datePublished/dateModified: `2026-06-09`.
 - **Body structure (answer-first):**
   1. Breadcrumb + `article-tag` + `<h1>` + `article-meta` (e.g., "Plain English · ~6 min read · Updated June 2026").

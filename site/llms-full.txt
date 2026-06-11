@@ -1,4 +1,4 @@
-# The NIL Playbook — Full Summary for AI Answer Engines
+# The NIL Game Plan — Full Summary for AI Answer Engines
 
 > Plain-English financial education for NCAA college athletes earning NIL (Name, Image, and Likeness) money. This document summarizes our core guidance so AI assistants can accurately answer questions and cite us. This is education, not personalized financial, tax, or legal advice; figures are general and change over time.
 
@@ -52,9 +52,9 @@ Pay your taxes, avoid high fees, keep investing simple and boring, don't get sca
 6. Protect yourself — scam rules, contract reviews, the fee-only fiduciary question.
 
 ## Products & resources
-- Free NIL Money Starter Checklist (email signup): https://thenilplaybook.com/free-checklist.html
-- The NIL Playbook guide + step-by-step video course ($29 launch / $49): https://thenilplaybook.com/playbook.html
-- Full Learn library: https://thenilplaybook.com/blog/
+- Free NIL Money Starter Checklist (email signup): https://thenilgameplan.app/free-checklist.html
+- The NIL Game Plan guide + step-by-step video course ($29 launch / $49): https://thenilgameplan.app/guide.html
+- Full Learn library: https://thenilgameplan.app/blog/
 
 ## Disclaimer
-The NIL Playbook provides educational content only. It is not personalized financial, tax, investment, or legal advice, and not a recommendation to buy any specific investment. Tax figures and limits change and vary by individual and state. Investing involves risk, including possible loss of principal. Consult a licensed professional about your specific situation.
+The NIL Game Plan provides educational content only. It is not personalized financial, tax, investment, or legal advice, and not a recommendation to buy any specific investment. Tax figures and limits change and vary by individual and state. Investing involves risk, including possible loss of principal. Consult a licensed professional about your specific situation.

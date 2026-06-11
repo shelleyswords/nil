@@ -1,11 +1,11 @@
 /* =========================================================
-   THE NIL PLAYBOOK — Site Config
+   THE NIL GAME PLAN — Site Config
    ALL human-supplied values live here. Edit this one file before launch.
    See GO-LIVE.md for step-by-step instructions on what to paste where.
    ========================================================= */
 window.NIL_CONFIG = {
   // --- Your live domain (used for canonical URLs / sharing). No trailing slash. ---
-  SITE_URL: "https://thenilplaybook.com",            // REPLACE_ME with your real domain
+  SITE_URL: "https://thenilgameplan.app",            // REPLACE_ME with your real domain
 
   // --- Stripe checkout (Payment Link or hosted Checkout URL) for the $29/$49 product. ---
   // Create in Stripe → Product → Payment Link. Set its success URL to COURSE_ACCESS_URL below.
@@ -23,11 +23,11 @@ window.NIL_CONFIG = {
   ANALYTICS_ID: "",
 
   // --- Your contact + social URLs (used in footer, video hub, schema). ---
-  CONTACT_EMAIL: "hello@thenilplaybook.com",          // REPLACE_ME
+  CONTACT_EMAIL: "hello@thenilgameplan.app",          // REPLACE_ME
   SOCIAL: {
-    tiktok:    "https://tiktok.com/@thenilplaybook",     // REPLACE_ME
-    youtube:   "https://youtube.com/@thenilplaybook",    // REPLACE_ME
-    instagram: "https://instagram.com/thenilplaybook",   // REPLACE_ME
-    facebook:  "https://facebook.com/thenilplaybook"     // REPLACE_ME
+    tiktok:    "https://tiktok.com/@thenilgameplan",     // REPLACE_ME
+    youtube:   "https://youtube.com/@thenilgameplan",    // REPLACE_ME
+    instagram: "https://instagram.com/thenilgameplan",   // REPLACE_ME
+    facebook:  "https://facebook.com/thenilgameplan"     // REPLACE_ME
   }
 };

@@ -1,4 +1,4 @@
-# BUILD LOG — The NIL Playbook program
+# BUILD LOG — The NIL Game Plan program
 
 Autonomous build executing `GOAL-PROMPT.md`. Started 2026-06-09 (overnight run).
 
@@ -13,7 +13,7 @@ Autonomous build executing `GOAL-PROMPT.md`. Started 2026-06-09 (overnight run).
 | Page | Primary keyword |
 |---|---|
 | Home | NIL money / how to manage NIL money |
-| playbook.html | NIL money guide / NIL financial guide |
+| guide.html | NIL money guide / NIL financial guide |
 | free-checklist.html | NIL money checklist |
 | blog: nil-taxes | do college athletes pay taxes on NIL |
 | blog: how-much-nil-taxes | how much to set aside for NIL taxes |
@@ -37,7 +37,7 @@ Autonomous build executing `GOAL-PROMPT.md`. Started 2026-06-09 (overnight run).
 - [x] Design system CSS
 - [x] config.js, main.js
 - [x] Home page
-- [x] Sales page (playbook.html)
+- [x] Sales page (guide.html)
 - [x] Free checklist opt-in page
 - [x] Course home + mobile player + curriculum.js (24 lessons, progress tracking, free/paid gating)
 - [x] Video hub + videos.js

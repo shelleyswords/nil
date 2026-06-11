@@ -51,7 +51,7 @@ That's it. That simple system, run for years, builds real wealth.
 Tomorrow's email is the one that protects everything you just built — because the more visible you get, the more people come for your money.
 
 Talk soon,
-The NIL Playbook
+The NIL Game Plan
 
 No jargon. No suits. No fees you didn't sign up for.
 

@@ -1,4 +1,4 @@
-/* THE NIL PLAYBOOK — mobile-first course player.
+/* THE NIL GAME PLAN — mobile-first course player.
    No backend. Progress + access stored in localStorage.
    Free lessons (free:true) are open to everyone. Paid lessons unlock when the
    visitor has access — granted by arriving at /course/?access=member (the URL
@@ -51,7 +51,7 @@
     document.getElementById('progress-pct').textContent = pct + '%';
     document.getElementById('progress-fill').style.width = pct + '%';
     var note = document.getElementById('access-note');
-    note.textContent = hasAccess() ? '✓ Full access unlocked' : 'Free preview — unlock all lessons with the Playbook';
+    note.textContent = hasAccess() ? '✓ Full access unlocked' : 'Free preview — unlock all lessons with the Game Plan';
   }
 
   function renderSidebar(activeId) {
@@ -80,7 +80,7 @@
         '<div class="video-frame video-sticky"><div class="video-placeholder">' +
         '<div class="play">🔒</div><strong style="font-size:1.1rem">This lesson is part of the full course</strong>' +
         '<p style="margin-top:8px;max-width:34ch">Unlock all ' + flat.length + ' lessons, the written guide, and your year-one plan.</p>' +
-        '<a href="/playbook.html" class="btn" style="margin-top:16px">Unlock the full course — $29</a>' +
+        '<a href="/guide.html" class="btn" style="margin-top:16px">Unlock the full course — $29</a>' +
         '</div></div>';
     } else if (l.video) {
       var isFile = /\.(mp4|webm|mov)(\?|$)/i.test(l.video);
@@ -120,7 +120,7 @@
 
     body += '<div class="lesson-nav">' +
       (prev ? '<a class="btn btn-outline" href="?lesson=' + prev.id + '">← Previous</a>' : '<span></span>') +
-      (next ? '<a class="btn" href="?lesson=' + next.id + '">Next lesson →</a>' : '<a class="btn" href="/playbook.html">Get the full Playbook →</a>') +
+      (next ? '<a class="btn" href="?lesson=' + next.id + '">Next lesson →</a>' : '<a class="btn" href="/guide.html">Get the full Game Plan →</a>') +
       '</div>';
 
     main.innerHTML = body;

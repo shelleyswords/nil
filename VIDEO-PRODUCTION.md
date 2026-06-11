@@ -1,6 +1,6 @@
 # VIDEO-PRODUCTION.md — The Faceless Video Pipeline
 
-This is the complete, repeatable system for mass-producing The NIL Playbook lesson videos **without ever appearing on camera or recording your own voice.** Every video = AI voiceover + visuals + captions + light music. Follow this once, build your templates, and each new lesson becomes an assembly job instead of a creative project.
+This is the complete, repeatable system for mass-producing The NIL Game Plan lesson videos **without ever appearing on camera or recording your own voice.** Every video = AI voiceover + visuals + captions + light music. Follow this once, build your templates, and each new lesson becomes an assembly job instead of a creative project.
 
 ---
 

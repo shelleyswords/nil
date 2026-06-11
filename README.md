@@ -1,4 +1,4 @@
-# The NIL Playbook
+# The NIL Game Plan
 
 Plain-English financial education for NCAA college athletes earning NIL money — taught without the jargon, the suits, or the fees that quietly drain athletes.
 
@@ -19,7 +19,7 @@ Plain-English financial education for NCAA college athletes earning NIL money �
 | **`GO-LIVE.md`** | ⭐ Step-by-step launch checklist (domain, host, Stripe, email). |
 | `VIDEO-PRODUCTION.md` | The repeatable faceless-video pipeline. |
 | `BUILD-LOG.md` | Build decisions, verification results, and accuracy flags. |
-| `The-NIL-Playbook.pdf`, `NIL-Money-Starter-Checklist.pdf` | The guide + the free lead-magnet checklist. |
+| `The-NIL-Game-Plan.pdf`, `NIL-Money-Starter-Checklist.pdf` | The guide + the free lead-magnet checklist. |
 
 ## Go live
 

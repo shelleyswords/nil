@@ -1,4 +1,4 @@
-/* THE NIL PLAYBOOK — Video hub data.
+/* THE NIL GAME PLAN — Video hub data.
    Three faceless videos below are REAL and ship with the site (AI voiceover +
    branded captions). Add your own by giving each: a title, platform, and either
    `embed` (a YouTube embed URL, or a local .mp4 path) OR a `link` to the post. */

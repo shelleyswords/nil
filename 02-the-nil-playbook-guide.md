@@ -1,4 +1,4 @@
-# THE NIL PLAYBOOK
+# THE NIL GAME PLAN
 ### How to Keep, Grow, and Protect Your NIL Money — Without Getting Ripped Off
 
 *The plain-English money guide for college athletes. No jargon. No suits. No fees you didn't agree to.*
@@ -334,4 +334,4 @@ Everything in this guide, turned into one ordered checklist. Do them in order. B
 
 ---
 
-*© The NIL Playbook. For the people who earned it.*
+*© The NIL Game Plan. For the people who earned it.*

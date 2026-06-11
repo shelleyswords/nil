@@ -41,7 +41,7 @@ Save this question in your notes — it's the one that protects you from almost 
 Tomorrow's the last email in this series — and I'll show you how to put *all* of this together into one step-by-step plan.
 
 Talk soon,
-The NIL Playbook
+The NIL Game Plan
 
 No jargon. No suits. No fees you didn't sign up for.
 

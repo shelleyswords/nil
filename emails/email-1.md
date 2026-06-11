@@ -15,7 +15,7 @@
 
 **BODY**
 
-You're in. Welcome to The NIL Playbook.
+You're in. Welcome to The NIL Game Plan.
 
 Here's the thing you actually came for:
 
@@ -41,7 +41,7 @@ That's it. You just protected yourself from the mistake that wrecks more young a
 Tomorrow I'm going to show you something that costs athletes way more than taxes ever will — and almost nobody sees it coming.
 
 Talk soon,
-The NIL Playbook
+The NIL Game Plan
 
 No jargon. No suits. No fees you didn't sign up for.
 

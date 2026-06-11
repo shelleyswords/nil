@@ -52,7 +52,7 @@ body{{width:%(W)spx;height:%(H)spx;overflow:hidden;
   <div class="eyebrow">{eyebrow}</div>
   <div class="headline">{headline}</div>
   <div class="rule"></div>
-  <div class="brand">The NIL <span class="g">Playbook</span></div>
+  <div class="brand">The NIL <span class="g">Game Plan</span></div>
   <div class="pg">{pg}</div>
 </div></body></html>""" % {"W":W,"H":H,"pad":pad,"eb":eb,"hl":hl,"sm":sm,"lst":lst,
    "brand_fs":brand_fs,"maxw":maxw,"bl":90 if VERT else 150,
@@ -65,7 +65,7 @@ for i, s in enumerate(slides):
     htmlpath = os.path.join(WORK, f"{n}.html")
     pngpath = os.path.join(WORK, f"{n}.png")
     with open(htmlpath, "w") as f:
-        f.write(TEMPLATE.format(eyebrow=s.get("eyebrow", "THE NIL PLAYBOOK"),
+        f.write(TEMPLATE.format(eyebrow=s.get("eyebrow", "THE NIL GAME PLAN"),
                                 headline=s["headline"],
                                 pg=f"{i+1}/{len(slides)}"))
     subprocess.run([CHROME, "--headless", "--disable-gpu", "--hide-scrollbars",

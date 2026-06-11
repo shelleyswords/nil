@@ -1,4 +1,4 @@
-# The NIL Playbook — Posting Workflow
+# The NIL Game Plan — Posting Workflow
 ### How to turn ONE faceless video into 4 platform posts, batch fast, and never run dry
 
 *Built for a one-person operation. Everything is faceless (AI voiceover + visuals), so production is repeatable and batchable. The goal: spend a few focused hours, walk away with 1–2 weeks of content scheduled.*

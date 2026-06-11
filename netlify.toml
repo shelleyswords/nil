@@ -1,4 +1,4 @@
-# Netlify config for The NIL Playbook.
+# Netlify config for The NIL Game Plan.
 # The website lives in the `site/` subfolder; this tells Netlify to publish it.
 # No build step — it's plain static HTML/CSS/JS.
 [build]

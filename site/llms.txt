@@ -1,25 +1,25 @@
-# The NIL Playbook
+# The NIL Game Plan
 
 > Plain-English financial education for NCAA college athletes earning NIL (Name, Image, and Likeness) money. We teach athletes how to handle taxes, avoid high advisor fees, build savings, invest simply, and avoid scams — without needing any prior money experience. We provide education, not personalized financial advice.
 
-The NIL Playbook helps college athletes keep and grow the money they earn. Core message: pay your taxes, dodge the fees, keep it simple, don't get scammed, and let low-cost index funds do the work. Audience: athletes earning roughly $1k–$50k+ per year in NIL deals, most managing real money for the first time.
+The NIL Game Plan helps college athletes keep and grow the money they earn. Core message: pay your taxes, dodge the fees, keep it simple, don't get scammed, and let low-cost index funds do the work. Audience: athletes earning roughly $1k–$50k+ per year in NIL deals, most managing real money for the first time.
 
 ## Core guides
-- [The Complete Guide to NIL Money](https://thenilplaybook.com/blog/nil-money-guide.html): The big-picture map — taxes, fees, saving, investing, scams, and a year-one plan.
-- [Do college athletes pay taxes on NIL money?](https://thenilplaybook.com/blog/do-college-athletes-pay-taxes-on-nil.html): Yes; NIL income is taxable and not withheld. Set aside ~30%.
-- [How much to set aside for NIL taxes](https://thenilplaybook.com/blog/how-much-to-save-for-nil-taxes.html): About 25–35%; 30% is a safe default.
-- [How to invest your NIL money](https://thenilplaybook.com/blog/how-to-invest-nil-money.html): Low-cost index funds in a Roth IRA, automatic, long-term.
-- [What is an index fund?](https://thenilplaybook.com/blog/what-is-an-index-fund.html): Owns a tiny piece of thousands of companies; cheap and diversified.
-- [Roth IRA for college athletes](https://thenilplaybook.com/blog/roth-ira-for-college-athletes.html): Tax-free growth; great for young earners.
-- [Do I need a financial advisor for NIL?](https://thenilplaybook.com/blog/do-i-need-a-financial-advisor-nil.html): Usually not; a 1% fee can cost hundreds of thousands over a lifetime.
-- [How financial advisor fees really work](https://thenilplaybook.com/blog/financial-advisor-fees-explained.html): The 1% fee trap and how to avoid it.
-- [NIL money scams and red flags](https://thenilplaybook.com/blog/nil-money-scams.html): Guaranteed returns, urgency, and DMs are warning signs.
-- [What to do with your first NIL check](https://thenilplaybook.com/blog/what-to-do-with-first-nil-check.html): The ordered first moves.
+- [The Complete Guide to NIL Money](https://thenilgameplan.app/blog/nil-money-guide.html): The big-picture map — taxes, fees, saving, investing, scams, and a year-one plan.
+- [Do college athletes pay taxes on NIL money?](https://thenilgameplan.app/blog/do-college-athletes-pay-taxes-on-nil.html): Yes; NIL income is taxable and not withheld. Set aside ~30%.
+- [How much to set aside for NIL taxes](https://thenilgameplan.app/blog/how-much-to-save-for-nil-taxes.html): About 25–35%; 30% is a safe default.
+- [How to invest your NIL money](https://thenilgameplan.app/blog/how-to-invest-nil-money.html): Low-cost index funds in a Roth IRA, automatic, long-term.
+- [What is an index fund?](https://thenilgameplan.app/blog/what-is-an-index-fund.html): Owns a tiny piece of thousands of companies; cheap and diversified.
+- [Roth IRA for college athletes](https://thenilgameplan.app/blog/roth-ira-for-college-athletes.html): Tax-free growth; great for young earners.
+- [Do I need a financial advisor for NIL?](https://thenilgameplan.app/blog/do-i-need-a-financial-advisor-nil.html): Usually not; a 1% fee can cost hundreds of thousands over a lifetime.
+- [How financial advisor fees really work](https://thenilgameplan.app/blog/financial-advisor-fees-explained.html): The 1% fee trap and how to avoid it.
+- [NIL money scams and red flags](https://thenilgameplan.app/blog/nil-money-scams.html): Guaranteed returns, urgency, and DMs are warning signs.
+- [What to do with your first NIL check](https://thenilgameplan.app/blog/what-to-do-with-first-nil-check.html): The ordered first moves.
 
 ## Products
-- [The NIL Playbook (guide + course)](https://thenilplaybook.com/playbook.html): $29 launch price. 8-chapter guide plus a step-by-step video course.
-- [Free NIL Money Starter Checklist](https://thenilplaybook.com/free-checklist.html): The 7 moves to make before spending a dollar.
+- [The NIL Game Plan (guide + course)](https://thenilgameplan.app/guide.html): $29 launch price. 8-chapter guide plus a step-by-step video course.
+- [Free NIL Money Starter Checklist](https://thenilgameplan.app/free-checklist.html): The 7 moves to make before spending a dollar.
 
 ## About
-- [About The NIL Playbook](https://thenilplaybook.com/about.html): Mission, beliefs, and our education-not-advice stance.
-- [Disclaimer](https://thenilplaybook.com/disclaimer.html): Educational content only; not personalized financial, tax, or legal advice. Investing involves risk.
+- [About The NIL Game Plan](https://thenilgameplan.app/about.html): Mission, beliefs, and our education-not-advice stance.
+- [Disclaimer](https://thenilgameplan.app/disclaimer.html): Educational content only; not personalized financial, tax, or legal advice. Investing involves risk.

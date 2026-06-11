@@ -1,4 +1,4 @@
-# The NIL Playbook — 30-Day Content Calendar
+# The NIL Game Plan — 30-Day Content Calendar
 ### One faceless short-form video per day, mapped to pillars + platforms
 
 *This calendar pairs with `video-scripts.md` (40+ ready-to-produce scripts) and `posting-workflow.md` (how to turn one video into four posts). Every video is faceless: AI female voiceover + B-roll / AI-generated visuals / on-screen text. Same single clip cross-posts to all four platforms each day.*
