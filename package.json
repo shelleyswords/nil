@@ -1,0 +1,10 @@
+{
+  "name": "nil-game-plan-functions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Serverless functions for The NIL Game Plan (Resend email + drip).",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

@@ -5,9 +5,14 @@
   publish = "site"
   command = ""
 
-# Serverless function that handles email signups via Resend.
+# Serverless functions: email signup (Resend) + the scheduled drip sequence.
 [functions]
   directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Run the drip daily at 14:00 UTC (~9–10am ET) — sends due emails 2–6.
+[functions."drip"]
+  schedule = "0 14 * * *"
 
 # Nice-to-have security/caching headers for the static site.
 [[headers]]

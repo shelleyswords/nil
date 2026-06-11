@@ -30,11 +30,15 @@ Until you verify a domain, Resend will only let you send to **your own Resend ac
 2. The button shows "Sending…", then the success message; check your inbox for the checklist email.
 3. If it errors: Netlify → **Functions → subscribe → logs** shows the reason (usually a missing env var or an unverified domain).
 
-## What it does today (and the one limitation)
-- ✅ Captures the email, **emails the free checklist immediately**, and (if `RESEND_AUDIENCE_ID` is set) saves the contact to a Resend Audience.
-- ⚠️ **Resend does not have built-in drip automation.** The other 5 nurture emails (`emails/email-2.md` … `email-6.md`) aren't sent automatically yet. Two options:
-  1. **Manual broadcasts** — periodically send them from Resend → Broadcasts to your Audience (simplest).
-  2. **Automate the drip** — I can build a scheduled Netlify function that sends the timed sequence. Just ask.
+## What it does
+- ✅ Captures the email, **emails the free checklist immediately**, records the subscriber (Netlify Blobs — no setup), and (if `RESEND_AUDIENCE_ID` is set) saves the contact to a Resend Audience.
+- ✅ **Automated drip sequence.** A scheduled function (`netlify/functions/drip.js`) runs **daily** and sends the 5 follow-up emails on **day 2, 4, 6, 8, and 10** after each person signs up (fee trap → foundation → investing → scams → the $29 offer). Content lives in `netlify/functions/_lib.js` (`SEQUENCE`).
+- ✅ **Unsubscribe** — every email has a one-click unsubscribe link (`netlify/functions/unsubscribe.js`); unsubscribers are skipped by the drip.
+
+### Testing the drip
+- The drip runs on a schedule, so to test immediately: Netlify → **Functions → drip → "Run"** (or wait for the daily run). New signups won't be "due" for any follow-ups until day 2.
+- To change timing or copy, edit `SEQUENCE` in `_lib.js`; to change the schedule, edit `[functions."drip"]` in `netlify.toml`.
+- **Note:** Netlify Blobs is automatic — no database to set up. Just make sure the function deploy succeeds (it installs `@netlify/blobs` from `package.json`).
 
 ## Editing the welcome email
 The email's content/HTML lives in `welcomeEmail()` at the bottom of `netlify/functions/subscribe.js`. Edit there, commit, and it redeploys.
