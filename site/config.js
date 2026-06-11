@@ -7,9 +7,10 @@ window.NIL_CONFIG = {
   // --- Your live domain (used for canonical URLs / sharing). No trailing slash. ---
   SITE_URL: "https://thenilgameplan.app",            // REPLACE_ME with your real domain
 
-  // --- Stripe checkout (Payment Link or hosted Checkout URL) for the $29/$49 product. ---
-  // Create in Stripe → Product → Payment Link. Set its success URL to COURSE_ACCESS_URL below.
-  CHECKOUT_URL: "REPLACE_ME_STRIPE_PAYMENT_LINK",
+  // --- Stripe checkout (Payment Link) for the product. ---
+  // NOTE: this is a Stripe TEST-mode link (only test cards work). Before launch,
+  // replace it with the LIVE Payment Link (same URL without "test_").
+  CHECKOUT_URL: "https://buy.stripe.com/test_7sY6oHddYfSkgUQ1X9dEs00",
 
   // --- Where buyers land after paying (unlisted access page). Set this as Stripe's success URL. ---
   COURSE_ACCESS_URL: "/course/?access=member",        // keep, or point to an unlisted page you choose
