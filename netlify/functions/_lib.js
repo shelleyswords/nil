@@ -4,6 +4,9 @@ import { getStore } from "@netlify/blobs";
 export const KEY  = process.env.RESEND_API_KEY;
 export const FROM = process.env.RESEND_FROM || "The NIL Game Plan <onboarding@resend.dev>";
 export const SITE = (process.env.SITE_URL || "https://thenilgameplan.app").replace(/\/$/, "");
+// Where replies go. Set REPLY_TO to the inbox you actually monitor; otherwise
+// replies route to the From address.
+export const REPLY_TO = process.env.REPLY_TO || (FROM.match(/<([^>]+)>/)?.[1]) || undefined;
 
 export function subscribers() { return getStore("subscribers"); }
 export function keyFor(email) { return Buffer.from(email.toLowerCase()).toString("base64url"); }
@@ -16,6 +19,7 @@ export async function send(to, subject, html) {
     headers: { "Authorization": `Bearer ${KEY}`, "Content-Type": "application/json" },
     body: JSON.stringify({
       from: FROM, to: [to], subject, html,
+      ...(REPLY_TO ? { reply_to: REPLY_TO } : {}),
       headers: { "List-Unsubscribe": `<${unsubUrl(to)}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" }
     })
   });
@@ -49,7 +53,7 @@ export const SEQUENCE = [
       p("A financial advisor who charges <strong>1% a year</strong> sounds cheap. It isn't. That 1% comes off your <em>entire</em> balance every year, forever — including money that would've kept growing."),
       p("Over a lifetime, starting young, that “tiny” fee can quietly cost you <strong>$300,000–$500,000+</strong>. Same investments. The only difference is the fee."),
       p("So before you let anyone manage your money, ask them one question: <strong>“Are you a fee-only fiduciary, and how exactly do you get paid?”</strong> If the answer is fuzzy — walk away."),
-      p("More soon. — Coach")
+      p("More soon. — The NIL Game Plan")
     ].join(""), email)
   },
   {
@@ -92,7 +96,7 @@ export const SEQUENCE = [
       p("If you want it <strong>all in one place</strong> — step by step, with a year-one plan built for exactly how much you earn — that's <strong>The NIL Game Plan</strong>: the full guide plus a short, mobile-friendly video course."),
       p("It's <strong>$29</strong> right now (launch price; goes to $49). One payment, yours forever — the opposite of a 1%-a-year advisor."),
       cta(`${SITE}/guide.html`, "Get the NIL Game Plan — $29"),
-      p("Either way, I'm glad you're here. Go keep your money. — Coach")
+      p("Either way, we're glad you're here. Go keep your money. — The NIL Game Plan")
     ].join(""), email)
   }
 ];

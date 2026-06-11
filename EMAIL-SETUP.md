@@ -10,7 +10,8 @@ In Netlify → your site → **Site configuration → Environment variables → 
 | Key | Value | Required? |
 |---|---|---|
 | `RESEND_API_KEY` | your `re_...` key from Resend | ✅ required |
-| `RESEND_FROM` | `The NIL Game Plan <hello@thenilgameplan.app>` | ✅ required |
+| `RESEND_FROM` | `The NIL Game Plan <getstarted@thenilgameplan.app>` | ✅ required |
+| `REPLY_TO` | the inbox you actually check (e.g. your personal email) — where replies land | recommended |
 | `SITE_URL` | `https://thenilgameplan.app` (your live domain) | recommended |
 | `RESEND_AUDIENCE_ID` | a Resend Audience ID, to also save contacts to a list | optional |
 

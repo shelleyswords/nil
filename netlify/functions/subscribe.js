@@ -27,7 +27,7 @@ export const handler = async (event) => {
     <p style="font-size:16px;line-height:1.6;color:#41566b;margin:0 0 18px">You're in. Here are the 7 money moves to make <em>before</em> you spend a dollar of NIL money — one page, plain English.</p>
     <p style="margin:0 0 22px"><a href="${checklistUrl}" style="display:inline-block;background:#f2b705;color:#1a1300;font-weight:800;text-decoration:none;padding:14px 26px;border-radius:999px">Download the checklist →</a></p>
     <p style="font-size:16px;line-height:1.6;color:#41566b;margin:0 0 8px"><strong>Quick win to do today:</strong> the moment any NIL money lands, move <strong>30% into a separate savings account</strong> for taxes and pretend it doesn't exist. Nobody withholds taxes on NIL money — that one habit saves you from a tax-season nightmare.</p>
-    <p style="font-size:16px;line-height:1.6;color:#41566b;margin:18px 0 0">Over the next few days I'll send you the other big ones — the fee trap, simple investing, and how to spot scams. Keep an eye out. — Coach</p>`, email);
+    <p style="font-size:16px;line-height:1.6;color:#41566b;margin:18px 0 0">Over the next few days we'll send you the other big ones — the fee trap, simple investing, and how to spot scams. Keep an eye out. — The NIL Game Plan</p>`, email);
 
   try {
     const r = await send(email, "Here's your NIL Money Starter Checklist 🏈", html);
